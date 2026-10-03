@@ -3,12 +3,13 @@
 Measurement Discipline (System Configuration):
 - System Specs:
 - CPU: Intel Core Ultra 7 255h (no SMT)
-- --> Turbo boost disabled via BIOS, hence max clockspeed (pinned to Pcore 0) is 2GHz
+- --> Turbo boost disabled via throttlestop, hence max clockspeed (pinned to Pcore 0) is 2GHz
 - --> Cache working sets were based on cache size information pulled from intel Ark website, see further below
 - RAM: 32GB DDR5 5600MHz (Dual Channel)
 - OS: Windows 11 Home OEM (25H2, 26200.9445)
 - Compiler/Tools:
-- GCC/CLANG
+- CL (windows MSVC C/C++ compiler for VSCode and VSCode Studio)
+- Throttlestop
 - TBD
 
 Pre-experiment Hypothesis:
@@ -30,7 +31,8 @@ AI Use Note:
 Testing Methodology:
 - Core Pinning was pinned to Core 0 (P core)
 - SMT is not supported on this system anyways
-- Turbo boost is disabled via bios, along with Intel speedstep to ensure that clockspeed stays at constant 2GHz for P cores
+- Turbo boost is disabled via throttlestop, along with Intel speedstep (in BIOS) to ensure that clockspeed stays at constant 2GHz for P cores (in practice stayed around 1951-1988 MHz, with a few temporary spikes to 2193MHz, although it stayed consistently around 1988MHz during stress tests on a single core)
+- --> Also C1E state was disabled via throttlestop to prevent clocking down during idle states
 - Each kernel/test run was run 20 times to warm up, with results and timing averaged across those 20 runs (skipping the first 3 runs in this calculation due to warm ups)
 
 - Benchmarking information collected during benchmarking each kernel run:
