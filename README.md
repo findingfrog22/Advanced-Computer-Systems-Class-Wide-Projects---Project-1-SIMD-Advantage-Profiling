@@ -11,6 +11,22 @@ Measurement Discipline (System Configuration):
 - GCC/CLANG
 - TBD
 
+Pre-experiment Hypothesis:
+- I expect that throughput will be best when memory access is aligned and using sequential strides (stride of 1). I also suspect that effective bandwidth will sharply drop once we have strides beyond 1 and misaligned memory. Also, sequential access will probably be faster than random access too.
+
+AI Use Note:
+- Tools used: Copilot, Gemini
+- Copilot was used for:
+- --> assisting with benchmark scripting methodology and function calls
+- --> discussion around core pinning, testing methodology
+- --> discussion around prologue and tail with regards to alignment and tail-handling study
+- --> double checking my benchmarking calculations and formulas
+- --> second opinion on results
+- --> getting compiler flags for scalar vs auto-vectorization vs full targeted SIMD instructions
+- Gemini was used for:
+- --> setting up my Windows 11 C/C++ Compiler environment (it was broken before)
+- --> helping with random number generation code
+
 Testing Methodology:
 - Core Pinning was pinned to Core 0 (P core)
 - SMT is not supported on this system anyways
@@ -48,32 +64,22 @@ Intel has odd cache hierchies for the Intel Core Ultra 7 255H:
 - ECore L2: 4MB per module (1 module simply isn't documented well for Arrow Lake H)
 - LPE Core L2: 2MB Shared (1MB per LPE core equivalent)
 
-Datatypes chosen:
-- FP32 (float) : default
-- FP64 (double) : chosen as the comparison
+Alignment options chosen for comparison:
+- 0: Aligned
+- 7: Misaligned
+- This is the starting element offset from the original base address. so misaligned is 7 elements off from the original base address.
 
 Strides chosen for sweep:
 - 1: default
 - 2,4,8
 - This is how many elements in the array/vector that it runs over in granularity. so 1 means it strides 1 element at a time (which means it doesn't skip over elements). so 2 means it strides every other element (so element 1 to element 3 to ...)
 
-Alignment options chosen for comparison:
-- 0: Aligned
-- 7: Misaligned
-- This is the starting element offset from the original base address. so misaligned is 7 elements off from the original base address.
+Datatypes chosen:
+- FP32 (float) : default
+- FP64 (double) : chosen as the comparison
 
-Pre-experiment Hypothesis:
-- TBD
 
-AI Use Note:
-- Tools used: Copilot, Gemini
-- Copilot was used for:
-- --> assisting with benchmark scripting methodology and function calls
-- --> discussion around core pinning, testing methodology
-- --> discussion around prologue and tail with regards to alignment and tail-handling study
-- --> double checking my benchmarking calculations and formulas
-- --> second opinion on results
-- --> getting compiler flags for scalar vs auto-vectorization vs full targeted SIMD instructions
-- Gemini was used for:
-- --> setting up my Windows 11 C/C++ Compiler environment (it was broken before)
-- --> helping with random number generation code
+
+
+
+
