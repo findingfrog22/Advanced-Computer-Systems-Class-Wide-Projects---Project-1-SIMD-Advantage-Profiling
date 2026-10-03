@@ -11,6 +11,24 @@ Measurement Discipline (System Configuration):
 - GCC/CLANG
 - TBD
 
+Testing Methodology:
+- Core Pinning was pinned to Core 0 (P core)
+- SMT is not supported on this system anyways
+- Turbo boost is disabled via bios, along with Intel speedstep to ensure that clockspeed stays at constant 2GHz for P cores
+- Each kernel/test run was run 20 times to warm up, with results and timing averaged across those 20 runs (skipping the first 3 runs in this calculation due to warm ups)
+
+- Benchmarking information collected during benchmarking each kernel run:
+- --> Total floating point operations (all runs)
+- --> GFLOPS (avg per run)
+- --> HW Arithmetic Intensity (FLOPS/Byte)
+- --> Elapsed Time (in nanoseconds) across all runs
+- --> Average Time (in nanoseconds, per run)
+
+For scalar vs auto-vectorization, I used these compiler flags:
+- Scalar: -03 -fno-tree-vectorize
+- Auto-vectorization: -03
+- (Optionally commented) Targeted SIMD: -03 -mavx2
+
 Cache working set sizes: (these sizes fit within these cache hiarchies)
 - For FP32 only:
 - --> 8,192 Floats : ~32KB (L0 D)
@@ -46,3 +64,16 @@ Alignment options chosen for comparison:
 
 Pre-experiment Hypothesis:
 - TBD
+
+AI Use Note:
+- Tools used: Copilot, Gemini
+- Copilot was used for:
+- --> assisting with benchmark scripting methodology and function calls
+- --> discussion around core pinning, testing methodology
+- --> discussion around prologue and tail with regards to alignment and tail-handling study
+- --> double checking my benchmarking calculations and formulas
+- --> second opinion on results
+- --> getting compiler flags for scalar vs auto-vectorization vs full targeted SIMD instructions
+- Gemini was used for:
+- --> setting up my Windows 11 C/C++ Compiler environment (it was broken before)
+- --> helping with random number generation code
