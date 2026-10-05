@@ -1,0 +1,17 @@
+How to use these scripts:
+0. Go to your BIOS and disable Hyperthreading/SMT
+1. Download these files:
+--> project1.cpp #holds data collectors for 2-5
+--> project1Scalar.cpp #holds scalars portion of data collection for 1
+--> project1Vector.cpp #holds auto-vectorized portion of data collection for 1
+--> benchscript.sh #this is what automatically configures the environment, and collects data into text files for you
+--> installscript.sh #this is optional, it installs dependencies required to properly benchmark this script
+2. Make sure your downloaded files are all in the same folder, and must have execution and read/write permissions
+3. If needed, run the install script
+4. Run the benchscript.sh file, it will create new text files and write results to them
+
+Some disclaimer notes:
+- THis was only tested on debian, with intel cpus
+- It uses AVX-512 for the plots #2-5, if your CPU doesn't support it, you must change the avx flag in the benchscript.sh file
+- Roofline interpretation simply uses the data from #2
+- It uses cache sizes for working set sizes for the I5 1135G7, so if your cpu is different and has different cache sizes (which it likely does), then you must adjust it in all the .cpp files to align with your cpu's cache hierarchy
