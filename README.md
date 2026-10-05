@@ -2,15 +2,17 @@
 
 Measurement Discipline (System Configuration):
 - System Specs:
-- CPU: Intel Core Ultra 7 255h (no SMT)
-- --> Turbo boost disabled via throttlestop, hence max clockspeed (pinned to Pcore 0) is 2GHz
+- CPU: Intel Core i5 1135G7, 4c/8t, 400MHz-4.20GHz
+- --> Turbo boost disabled via Intel P_State driver modifications
+- --> Pinned to Core 0
+- --> Hyperthreading (SMT) is Disabled through BIOS prior to benchmarking
 - --> Cache working sets were based on cache size information pulled from intel Ark website, see further below
-- RAM: 32GB DDR5 5600MHz (Dual Channel)
-- OS: Windows 11 Home OEM (25H2, 26200.9445)
+- RAM: 8GB LPDDR4X 4267MHz (Dual Channel)
+- OS: Linux Debian Trixie 13.7.0
 - Compiler/Tools:
-- CL (windows MSVC C/C++ compiler for VSCode and VSCode Studio)
-- Throttlestop
-- TBD
+- GCC 14.2.0 (default with Debian 13)
+- Governor: intel cpu_freq
+- VSCode IDE
 
 Pre-experiment Hypothesis:
 - I expect that throughput will be best when memory access is aligned and using sequential strides (stride of 1). I also suspect that effective bandwidth will sharply drop once we have strides beyond 1 and misaligned memory. Also, sequential access will probably be faster than random access too.
@@ -27,13 +29,14 @@ AI Use Note:
 - Gemini was used for:
 - --> setting up my Windows 11 C/C++ Compiler environment (it was broken before)
 - --> helping with random number generation code
+- --> Assisting with Linux benchmarking libraries support
 
 Testing Methodology:
-- Core Pinning was pinned to Core 0 (P core)
-- SMT is not supported on this system anyways
-- Turbo boost is disabled via throttlestop, along with Intel speedstep (in BIOS) to ensure that clockspeed stays at constant 2GHz for P cores (in practice stayed around 1951-1988 MHz, with a few temporary spikes to 2193MHz, although it stayed consistently around 1988MHz during stress tests on a single core)
-- --> Also C1E state was disabled via throttlestop to prevent clocking down during idle states
-- Each kernel/test run was run 20 times to warm up, with results and timing averaged across those 20 runs (skipping the first 3 runs in this calculation due to warm ups)
+- Core Pinning was pinned to Core 0
+- Hyperthreading was disabled in BIOS
+- Turbo boost is disabled via modifications to the intel cpu_freq governor in Debian, along with linux-powercpu to ensure that clockspeed stays at constant 1.40GHz for core 0. In practice, it stayed exactly at 1.40GHz.
+- --> Also all low-power C states were disabled in the script, so it is at C0 100% of the time
+- Each kernel/test run was run 20 times to warm up, with results and timing averaged across those 20 runs (runs 3 runs before the 20-run loop in this calculation due to warm ups)
 
 - Benchmarking information collected during benchmarking each kernel run:
 - --> Total floating point operations (all runs)
@@ -45,26 +48,22 @@ Testing Methodology:
 For scalar vs auto-vectorization, I used these compiler flags:
 - Scalar: -03 -fno-tree-vectorize
 - Auto-vectorization: -03
-- (Optionally commented) Targeted SIMD: -03 -mavx2
+- (Used for plots #2-5) Targeted SIMD: -03 -mavx512vl (this adds vector length support too)
 
 Cache working set sizes: (these sizes fit within these cache hiarchies)
 - For FP32 only:
-- --> 8,192 Floats : ~32KB (L0 D)
-- --> 12,288 Floats : ~56KB (L0 I)
-- --> 32,768 Floats : ~128KB (L1)
-- --> 524,288 Floats : ~2MB (L2, Pcore)
+- --> 4,096 Floats : ~16KB (L1 I, per core)
+- --> 9,216 Floats : ~36KB (L1 D, per core)
+- --> 262,144 Floats : ~1MB (L2, per core)
 - --> 1,572,864 Floats : ~6MB (L3, Shared)
-- --> 1,777,216 Floats : ~64MB (DRAM)
+- --> 16,777,216 Floats : ~64MB (DRAM)
 - For FP64: removed implementation
 
-Intel has odd cache hierchies for the Intel Core Ultra 7 255H:
-- L0 D/I: 48KB/64KB per core
-- L1: 192KB per core
-- L2: 3MB per core
-- L3: 24MB shared (~1.5MB per core equivalent)
-- ECore L1: 96KB per core
-- ECore L2: 4MB per module (1 module simply isn't documented well for Arrow Lake H)
-- LPE Core L2: 2MB Shared (1MB per LPE core equivalent)
+According to Intel's website for the I5 1135G7 + some linux commands, I was able to derive the cache hierarchy for this CPU:
+- L1-I: 128KiB (32KiB per core)
+- L1-D: 192KiB (48KiB per core)
+- L2 cache: 5MiB (1.25MiB per core)
+- L3 "Smart" cache: 8MiB (shared)
 
 Alignment options chosen for comparison:
 - 0: Aligned
