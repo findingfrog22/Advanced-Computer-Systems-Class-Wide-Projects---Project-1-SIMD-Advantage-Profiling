@@ -1,0 +1,308 @@
+
+Locality sweep: 
+
+
+Working set size (x4 gets your kb(thousands), mb(millions) count): 4096
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 15253
+Average time (in nanoseconds, per run): 762
+Number of Runs: 20
+Total floating point operations (all runs): 163840
+GFLOPS (avg per run): 10.7415
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 232091
+Average time (in nanoseconds, per run): 11604
+Number of Runs: 20
+Total floating point operations (all runs): 163840
+GFLOPS (avg per run): 0.70593
+HW Arithmetic Intensity (FLOPS/Byte): 0.249998
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 15199
+Average time (in nanoseconds, per run): 759
+Number of Runs: 20
+Total floating point operations (all runs): 81920
+GFLOPS (avg per run): 5.38983
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+
+Working set size (x4 gets your kb(thousands), mb(millions) count): 9216
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 53401
+Average time (in nanoseconds, per run): 2670
+Number of Runs: 20
+Total floating point operations (all runs): 368640
+GFLOPS (avg per run): 6.90324
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 526855
+Average time (in nanoseconds, per run): 26342
+Number of Runs: 20
+Total floating point operations (all runs): 368640
+GFLOPS (avg per run): 0.699699
+HW Arithmetic Intensity (FLOPS/Byte): 0.249999
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 60876
+Average time (in nanoseconds, per run): 3043
+Number of Runs: 20
+Total floating point operations (all runs): 184320
+GFLOPS (avg per run): 3.02779
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+
+Working set size (x4 gets your kb(thousands), mb(millions) count): 262144
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 2428071
+Average time (in nanoseconds, per run): 121403
+Number of Runs: 20
+Total floating point operations (all runs): 10485760
+GFLOPS (avg per run): 4.31856
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 15195295
+Average time (in nanoseconds, per run): 759764
+Number of Runs: 20
+Total floating point operations (all runs): 10485760
+GFLOPS (avg per run): 0.690066
+HW Arithmetic Intensity (FLOPS/Byte): 0.25
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 3476783
+Average time (in nanoseconds, per run): 173839
+Number of Runs: 20
+Total floating point operations (all runs): 5242880
+GFLOPS (avg per run): 1.50797
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+
+Working set size (x4 gets your kb(thousands), mb(millions) count): 1572864
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 18059809
+Average time (in nanoseconds, per run): 902990
+Number of Runs: 20
+Total floating point operations (all runs): 62914560
+GFLOPS (avg per run): 3.48368
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 91186966
+Average time (in nanoseconds, per run): 4559348
+Number of Runs: 20
+Total floating point operations (all runs): 62914560
+GFLOPS (avg per run): 0.689951
+HW Arithmetic Intensity (FLOPS/Byte): 0.25
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 26640929
+Average time (in nanoseconds, per run): 1332046
+Number of Runs: 20
+Total floating point operations (all runs): 31457280
+GFLOPS (avg per run): 1.18079
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+
+Working set size (x4 gets your kb(thousands), mb(millions) count): 16777216
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 215265391
+Average time (in nanoseconds, per run): 10763269
+Number of Runs: 20
+Total floating point operations (all runs): 671088640
+GFLOPS (avg per run): 3.11749
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 972906766
+Average time (in nanoseconds, per run): 48645338
+Number of Runs: 20
+Total floating point operations (all runs): 671088640
+GFLOPS (avg per run): 0.689777
+HW Arithmetic Intensity (FLOPS/Byte): 0.25
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 299554503
+Average time (in nanoseconds, per run): 14977725
+Number of Runs: 20
+Total floating point operations (all runs): 335544320
+GFLOPS (avg per run): 1.12014
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+
+Aligned vs not aligned: 
+
+
+Aligned: 
+
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 189729
+Average time (in nanoseconds, per run): 9486
+Number of Runs: 20
+Total floating point operations (all runs): 1310720
+GFLOPS (avg per run): 6.90838
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 1891802
+Average time (in nanoseconds, per run): 94590
+Number of Runs: 20
+Total floating point operations (all runs): 1310720
+GFLOPS (avg per run): 0.692842
+HW Arithmetic Intensity (FLOPS/Byte): 0.25
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 215034
+Average time (in nanoseconds, per run): 10751
+Number of Runs: 20
+Total floating point operations (all runs): 655360
+GFLOPS (avg per run): 3.0477
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+
+Misaligned: 7
+
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 188159
+Average time (in nanoseconds, per run): 9407
+Number of Runs: 20
+Total floating point operations (all runs): 1310440
+GFLOPS (avg per run): 6.96454
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 1897431
+Average time (in nanoseconds, per run): 94871
+Number of Runs: 20
+Total floating point operations (all runs): 1310440
+GFLOPS (avg per run): 0.690639
+HW Arithmetic Intensity (FLOPS/Byte): 0.25
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 212884
+Average time (in nanoseconds, per run): 10644
+Number of Runs: 20
+Total floating point operations (all runs): 655220
+GFLOPS (avg per run): 3.07783
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+
+Stride Sweep: 
+
+Stride Size: 1
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 189863
+Average time (in nanoseconds, per run): 9493
+Number of Runs: 20
+Total floating point operations (all runs): 1310720
+GFLOPS (avg per run): 6.9035
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 1888345
+Average time (in nanoseconds, per run): 94417
+Number of Runs: 20
+Total floating point operations (all runs): 1310720
+GFLOPS (avg per run): 0.69411
+HW Arithmetic Intensity (FLOPS/Byte): 0.25
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 215198
+Average time (in nanoseconds, per run): 10759
+Number of Runs: 20
+Total floating point operations (all runs): 655360
+GFLOPS (avg per run): 3.04538
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+Stride Size: 2
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 520506
+Average time (in nanoseconds, per run): 26025
+Number of Runs: 20
+Total floating point operations (all runs): 655360
+GFLOPS (avg per run): 1.25908
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 936901
+Average time (in nanoseconds, per run): 46845
+Number of Runs: 20
+Total floating point operations (all runs): 655360
+GFLOPS (avg per run): 0.699498
+HW Arithmetic Intensity (FLOPS/Byte): 0.25
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 544505
+Average time (in nanoseconds, per run): 27225
+Number of Runs: 20
+Total floating point operations (all runs): 327680
+GFLOPS (avg per run): 0.601794
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+Stride Size: 4
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 271088
+Average time (in nanoseconds, per run): 13554
+Number of Runs: 20
+Total floating point operations (all runs): 327680
+GFLOPS (avg per run): 1.20876
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 467684
+Average time (in nanoseconds, per run): 23384
+Number of Runs: 20
+Total floating point operations (all runs): 327680
+GFLOPS (avg per run): 0.700644
+HW Arithmetic Intensity (FLOPS/Byte): 0.249999
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 288504
+Average time (in nanoseconds, per run): 14425
+Number of Runs: 20
+Total floating point operations (all runs): 163840
+GFLOPS (avg per run): 0.567895
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+Stride Size: 8
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 135935
+Average time (in nanoseconds, per run): 6796
+Number of Runs: 20
+Total floating point operations (all runs): 163840
+GFLOPS (avg per run): 1.20528
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 233068
+Average time (in nanoseconds, per run): 11653
+Number of Runs: 20
+Total floating point operations (all runs): 163840
+GFLOPS (avg per run): 0.702971
+HW Arithmetic Intensity (FLOPS/Byte): 0.249998
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 203858
+Average time (in nanoseconds, per run): 10192
+Number of Runs: 20
+Total floating point operations (all runs): 81920
+GFLOPS (avg per run): 0.401848
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+
+Data-type Comparison (FP32 vs FP64): 
+
+FP32 results: 
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 95040
+Average time (in nanoseconds, per run): 4752
+Number of Runs: 20
+Total floating point operations (all runs): 655360
+GFLOPS (avg per run): 6.89562
+HW Arithmetic Intensity (FLOPS/Byte): 0.166667
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 938023
+Average time (in nanoseconds, per run): 46901
+Number of Runs: 20
+Total floating point operations (all runs): 655360
+GFLOPS (avg per run): 0.698661
+HW Arithmetic Intensity (FLOPS/Byte): 0.25
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 107785
+Average time (in nanoseconds, per run): 5389
+Number of Runs: 20
+Total floating point operations (all runs): 327680
+GFLOPS (avg per run): 3.04013
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+FP64 results: 
+AXPY: 
+Elapsed Time (in nanoseconds) across all runs: 189809
+Average time (in nanoseconds, per run): 9490
+Number of Runs: 20
+Total floating point operations (all runs): 655360
+GFLOPS (avg per run): 3.45273
+HW Arithmetic Intensity (FLOPS/Byte): 0.0833333
+Dot Product Reduction: 
+Elapsed Time (in nanoseconds) across all runs: 936160
+Average time (in nanoseconds, per run): 46808
+Number of Runs: 20
+Total floating point operations (all runs): 655360
+GFLOPS (avg per run): 0.700051
+HW Arithmetic Intensity (FLOPS/Byte): 0.125
+Element-wise Multiply: 
+Elapsed Time (in nanoseconds) across all runs: 261529
+Average time (in nanoseconds, per run): 13076
+Number of Runs: 20
+Total floating point operations (all runs): 327680
+GFLOPS (avg per run): 1.25294
+HW Arithmetic Intensity (FLOPS/Byte): 0.0416667
+ended program

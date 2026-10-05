@@ -1,0 +1,25 @@
+
+Auto-Vectorization: Locality sweep: 
+
+Auto-Vectorization Results: 
+at working set size: 4096, 
+AXPY Auto-Vectorization Throughput (GFLOPS): 5.50926
+Dot Product Reduction Auto-Vectorization Throughput (GFLOPS): 0.707225
+Element-Wise Multiply Auto-Vectorization Throughput (GFLOPS): 2.74927
+at working set size: 9216, 
+AXPY Auto-Vectorization Throughput (GFLOPS): 5.36993
+Dot Product Reduction Auto-Vectorization Throughput (GFLOPS): 0.702566
+Element-Wise Multiply Auto-Vectorization Throughput (GFLOPS): 2.21052
+at working set size: 262144, 
+AXPY Auto-Vectorization Throughput (GFLOPS): 4.27535
+Dot Product Reduction Auto-Vectorization Throughput (GFLOPS): 0.686611
+Element-Wise Multiply Auto-Vectorization Throughput (GFLOPS): 1.46842
+at working set size: 1572864, 
+AXPY Auto-Vectorization Throughput (GFLOPS): 3.47173
+Dot Product Reduction Auto-Vectorization Throughput (GFLOPS): 0.692702
+Element-Wise Multiply Auto-Vectorization Throughput (GFLOPS): 1.20225
+at working set size: 16777216, 
+AXPY Auto-Vectorization Throughput (GFLOPS): 3.13963
+Dot Product Reduction Auto-Vectorization Throughput (GFLOPS): 0.68622
+Element-Wise Multiply Auto-Vectorization Throughput (GFLOPS): 1.11291
+ended Vector program

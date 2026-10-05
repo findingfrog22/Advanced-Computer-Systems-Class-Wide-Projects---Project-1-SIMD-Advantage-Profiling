@@ -1,0 +1,25 @@
+
+Scalar-Only: Locality sweep: 
+
+Scalar results: 
+at working set size: 4096, 
+AXPY Scalar Throughput (GFLOPS): 1.38945
+Dot Product Reduction Scalar Throughput (GFLOPS): 0.704925
+Element-Wise Multiply Scalar Throughput (GFLOPS): 0.695239
+at working set size: 9216, 
+AXPY Scalar Throughput (GFLOPS): 2.08856
+Dot Product Reduction Scalar Throughput (GFLOPS): 0.701038
+Element-Wise Multiply Scalar Throughput (GFLOPS): 0.668757
+at working set size: 262144, 
+AXPY Scalar Throughput (GFLOPS): 2.04097
+Dot Product Reduction Scalar Throughput (GFLOPS): 0.689105
+Element-Wise Multiply Scalar Throughput (GFLOPS): 0.951688
+at working set size: 1572864, 
+AXPY Scalar Throughput (GFLOPS): 1.94604
+Dot Product Reduction Scalar Throughput (GFLOPS): 0.693104
+Element-Wise Multiply Scalar Throughput (GFLOPS): 0.906693
+at working set size: 16777216, 
+AXPY Scalar Throughput (GFLOPS): 1.88377
+Dot Product Reduction Scalar Throughput (GFLOPS): 0.692625
+Element-Wise Multiply Scalar Throughput (GFLOPS): 0.876374
+ended Scalar program
