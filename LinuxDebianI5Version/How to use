@@ -11,7 +11,8 @@ How to use these scripts:
 4. Run the benchscript.sh file, it will create new text files and write results to them
 
 Some disclaimer notes:
-- THis was only tested on debian, with intel cpus
+- THis was only tested on debian, with intel cpus. It uses Intel-specific library modifications in linux to disable turbo boost, adjust the governor, etc
 - It uses AVX-512 for the plots #2-5, if your CPU doesn't support it, you must change the avx flag in the benchscript.sh file
 - Roofline interpretation simply uses the data from #2
 - It uses cache sizes for working set sizes for the I5 1135G7, so if your cpu is different and has different cache sizes (which it likely does), then you must adjust it in all the .cpp files to align with your cpu's cache hierarchy
+- You may have to adjust it for your CPU's governor in the benchscript.sh file, as it is currently set to 1.40GHz stable
