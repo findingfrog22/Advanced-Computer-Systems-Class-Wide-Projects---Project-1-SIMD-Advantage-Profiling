@@ -59,11 +59,11 @@ cpupower -c 0 frequency-info #this prints out the current frequency info for cor
 #cpupower -c 0 monitor
 
 #compiling program (deliverables 2-5) with SIMD flags enabled
-gcc -O3 -mavx512vl project1.cpp -lstdc++ -lm -o project1.exe | tee compilation.txt #SIMD flags
+gcc -O3 -mavx512vl project1.cpp -lstdc++ -lm -o project1.exe 2>&1 | tee compilation.txt #SIMD flags
 
 #compiling program (deliverable 1) 2 times, one with scalar flags and one with auto-vectorization flags enabled
-gcc -O3 -fno-tree-vectorize project1Scalar.cpp -lstdc++ -lm -o project1Scalar.exe | tee scalarCompilation.txt #scalar flags
-gcc -O3 project1Vector.cpp -lstdc++ -lm -o project1Vector.exe | tee vectorCompilation.txt #auto-vectorization flags
+gcc -O3 -fno-tree-vectorize project1Scalar.cpp -lstdc++ -lm -o project1Scalar.exe 2>&1 | tee scalarCompilation.txt #scalar flags
+gcc -O3 -march=native -fopt-info-vec-all project1Vector.cpp -lstdc++ -lm -o project1Vector.exe 2>&1 | tee vectorCompilation.txt #auto-vectorization flags
 
 #run the program (deliverable 1) with the core isolation and frequency settings applied 2 times, one with scalar flags and the other with auto-vectorization flags
 #cset shield --exec -- ./project1Scalar.exe | tee scalarResults.txt

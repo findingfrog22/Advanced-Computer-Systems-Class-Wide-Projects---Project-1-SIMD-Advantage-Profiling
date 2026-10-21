@@ -48,54 +48,19 @@ uint64_t benchmark(Func&& f, int iterations)
     return ns;//return the total time elapsed in nanoseconds for the number of iterations
 }
 
-//[Baseline] SAXPY / AXPY: y = a * x + y
-
-void AXPY(float a, std::vector<float>& x, std::vector<float>& y, size_t strides, size_t alignmentOffset){//SAXPY
-    //pointer version, allows for lower overhead and custom strides
-    size_t xsize = x.size();
-    size_t ysize = y.size();
-    float* __restrict xpointer = x.data() + alignmentOffset;//Prologue?
-    float* __restrict ypointer = y.data() + alignmentOffset;//Prologue?
-    if((xsize == ysize) && (alignmentOffset < ysize)){
-        #pragma loop(no_vector)
-        for(size_t i = 0; i < ysize - alignmentOffset; i += strides){//Main Vector Loop?
-            ypointer[i] += a * xpointer[i];
-        }
-    }//no epilogue/tail handling?
-}
-
 //[SIMD AVX2, Auto-vectoriztion] SAXPY / AXPY: y = a * x + y
 
 void AXPY_SIMD(float a, std::vector<float>& x, std::vector<float>& y, size_t strides, size_t alignmentOffset){//SAXPY
     //pointer version, allows for lower overhead and custom strides
     size_t xsize = x.size();
     size_t ysize = y.size();
-    float* __restrict xpointer = x.data() + alignmentOffset;//Prologue?
-    float* __restrict ypointer = y.data() + alignmentOffset;//Prologue?
+    float* __restrict xpointer = x.data() + alignmentOffset;
+    float* __restrict ypointer = y.data() + alignmentOffset;
     if((xsize == ysize) && (alignmentOffset < ysize)){
-        for(size_t i = 0; i < ysize - alignmentOffset; i += strides){//Main Vector Loop?
+        for(size_t i = 0; i < ysize - alignmentOffset; i += strides){//Main Vector Loop
             ypointer[i] += a * xpointer[i];
         }
-    }//no epilogue/tail handling?
-}
-
-//[Baseline] Dot product / reduction: s = sum(x_i * y_i)
-
-float DotProductReduction(std::vector<float>& x, std::vector<float>& y, size_t strides, size_t alignmentOffset){
-    //pointer version, allows for lower overhead and custom strides
-    size_t xsize = x.size();
-    size_t ysize = y.size();
-    float* __restrict xpointer = x.data() + alignmentOffset;//Prologue?
-    float* __restrict ypointer = y.data() + alignmentOffset;//Prologue?
-    if((xsize == ysize) && (alignmentOffset < ysize)){
-        float s = 0.0f;
-        #pragma loop(no_vector)
-        for(size_t i = 0; i < ysize - alignmentOffset; i += strides){//Main Vector Loop?
-            s += ypointer[i] * xpointer[i];
-        }
-        return s;//Epilogue/tail handling?
     }
-    return 0.0f;//Epilogue/tail handling?
 }
 
 //[SIMD(AXV2), auto-vectorized] Dot product / reduction: s = sum(x_i * y_i)
@@ -104,34 +69,16 @@ float DotProductReduction_SIMD(std::vector<float>& x, std::vector<float>& y, siz
     //pointer version, allows for lower overhead and custom strides
     size_t xsize = x.size();
     size_t ysize = y.size();
-    float* __restrict xpointer = x.data() + alignmentOffset;//Prologue?
-    float* __restrict ypointer = y.data() + alignmentOffset;//Prologue?
+    float* __restrict xpointer = x.data() + alignmentOffset;
+    float* __restrict ypointer = y.data() + alignmentOffset;
     if((xsize == ysize) && (alignmentOffset < ysize)){
         float s = 0.0f;
-        for(size_t i = 0; i < ysize - alignmentOffset; i += strides){//Main Vector Loop?
+        for(size_t i = 0; i < ysize - alignmentOffset; i += strides){//Main Vector Loop
             s += ypointer[i] * xpointer[i];
         }
-        return s;//Epilogue/tail handling?
+        return s;
     }
-    return 0.0f;//Epilogue/tail handling?
-}
-
-//[Baseline] Elementwise multiply: z_i = x_i * y_i
-
-void ElementWiseMultiply(std::vector<float>& x, std::vector<float>& y, std::vector<float>& z, size_t strides, size_t alignmentOffset){
-    //pointer version, allows for lower overhead and custom strides
-    size_t xsize = x.size();
-    size_t ysize = y.size();
-    size_t zsize = z.size();
-    float* __restrict xpointer = x.data() + alignmentOffset;//Prologue?
-    float* __restrict ypointer = y.data() + alignmentOffset;//Prologue?
-    float* __restrict zpointer = z.data() + alignmentOffset;//Prologue?
-    if((xsize == ysize) && (ysize == zsize) && (alignmentOffset < zsize)){
-        #pragma loop(no_vector)
-        for(size_t i = 0; i < zsize - alignmentOffset; i += strides){//Main Vector Loop?
-            zpointer[i] = xpointer[i] * ypointer[i];
-        }
-    }//No Epilogue/tail handling?
+    return 0.0f;
 }
 
 //[SIMD(AVX2), auto-vectorized] Elementwise multiply: z_i = x_i * y_i
@@ -141,14 +88,14 @@ void ElementWiseMultiply_SIMD(std::vector<float>& x, std::vector<float>& y, std:
     size_t xsize = x.size();
     size_t ysize = y.size();
     size_t zsize = z.size();
-    float* __restrict xpointer = x.data() + alignmentOffset;//Prologue?
-    float* __restrict ypointer = y.data() + alignmentOffset;//Prologue?
-    float* __restrict zpointer = z.data() + alignmentOffset;//Prologue?
+    float* __restrict xpointer = x.data() + alignmentOffset;
+    float* __restrict ypointer = y.data() + alignmentOffset;
+    float* __restrict zpointer = z.data() + alignmentOffset;
     if((xsize == ysize) && (ysize == zsize) && (alignmentOffset < zsize)){
-        for(size_t i = 0; i < zsize - alignmentOffset; i += strides){//Main Vector Loop?
+        for(size_t i = 0; i < zsize - alignmentOffset; i += strides){//Main Vector Loop
             zpointer[i] = xpointer[i] * ypointer[i];
         }
-    }//No Epilogue/tail handling?
+    }
 }
 
 //I will make my own version based off of this:
@@ -165,28 +112,18 @@ void printResults(results res){
     std::cout << "Elapsed Time (in nanoseconds) across all runs: " << res.elapsed_time << "\nAverage time (in nanoseconds, per run): " << res.average_time << "\nNumber of Runs: " << res.runs << "\nTotal floating point operations (all runs): " << res.flop << "\nGFLOPS (avg per run): " << res.gflops << "\nHW Arithmetic Intensity (FLOPS/Byte): " << res.arithmeticIntensity << std::endl;
 }
 
-results BenchmarkAXPY(float a, std::vector<float>& x, std::vector<float>& y, size_t strides, size_t alignmentOffset, size_t runs, bool isVectorized){
+results BenchmarkAXPY(float a, std::vector<float>& x, std::vector<float>& y, size_t strides, size_t alignmentOffset, size_t runs){
     //
-    if(isVectorized){
-        // Warm-up to stabilize caches and branch predictors
-        for (int i = 0; i < 3; i++)
-            AXPY_SIMD(a, x, y, strides, alignmentOffset);
-    }
-    else{
-        // Warm-up to stabilize caches and branch predictors
-        for (int i = 0; i < 3; i++)
-            AXPY(a, x, y, strides, alignmentOffset);
-    }
+    
+    // Warm-up to stabilize caches and branch predictors
+    for (int i = 0; i < 3; i++)
+        AXPY_SIMD(a, x, y, strides, alignmentOffset);
+    
     auto start = std::chrono::steady_clock::now();//start time
     
-    if(isVectorized){
-        for (int i = 0; i < runs; i++)//run the function for a set number of iterations
-            AXPY_SIMD(a, x, y, strides, alignmentOffset);
-    }
-    else{
-        for (int i = 0; i < runs; i++)//run the function for a set number of iterations
-            AXPY(a, x, y, strides, alignmentOffset);
-    }
+    for (int i = 0; i < runs; i++)//run the function for a set number of iterations
+        AXPY_SIMD(a, x, y, strides, alignmentOffset);
+    
     auto end = std::chrono::steady_clock::now();//end time
     volatile float sink = y[0];
 
@@ -218,29 +155,20 @@ results BenchmarkAXPY(float a, std::vector<float>& x, std::vector<float>& y, siz
     return res;
 }
 
-results BenchmarkDotProductReduction(std::vector<float>& x, std::vector<float>& y, size_t strides, size_t alignmentOffset, size_t runs, bool isVectorized){
+results BenchmarkDotProductReduction(std::vector<float>& x, std::vector<float>& y, size_t strides, size_t alignmentOffset, size_t runs){
     //
     float s = 0.0f;
-    if(isVectorized){
-        // Warm-up to stabilize caches and branch predictors
-        for (int i = 0; i < 3; i++)
-            s = DotProductReduction_SIMD(x, y, strides, alignmentOffset);
-    }
-    else{
-        for(int i = 0; i < 3; i++){
-            s = DotProductReduction(x, y, strides, alignmentOffset);
-        }
-    }
+    
+    // Warm-up to stabilize caches and branch predictors
+    for (int i = 0; i < 3; i++)
+        s = DotProductReduction_SIMD(x, y, strides, alignmentOffset);
+    
     auto start = std::chrono::steady_clock::now();//start time
 
-    if(isVectorized){
-        for (int i = 0; i < runs; i++)//run the function for a set number of iterations
-            s = DotProductReduction_SIMD(x, y, strides, alignmentOffset);
-    }
-    else{
-        for (int i = 0; i < runs; i++)//run the function for a set number of iterations
-            s = DotProductReduction(x, y, strides, alignmentOffset);
-    }
+    
+    for (int i = 0; i < runs; i++)//run the function for a set number of iterations
+        s = DotProductReduction_SIMD(x, y, strides, alignmentOffset);
+    
     auto end = std::chrono::steady_clock::now();//end time
     volatile float sink3 = s;
 
@@ -272,28 +200,19 @@ results BenchmarkDotProductReduction(std::vector<float>& x, std::vector<float>& 
     return res;
 }
 
-results BenchmarkElementWiseMultiply(std::vector<float>& x, std::vector<float>& y, std::vector<float>& z, size_t strides, size_t alignmentOffset, size_t runs, bool isVectorized){
+results BenchmarkElementWiseMultiply(std::vector<float>& x, std::vector<float>& y, std::vector<float>& z, size_t strides, size_t alignmentOffset, size_t runs){
     //
-    if(isVectorized){
-        // Warm-up to stabilize caches and branch predictors
-        for (int i = 0; i < 3; i++)
-            ElementWiseMultiply_SIMD(x, y, z, strides, alignmentOffset);
-    }
-    else{
-        // Warm-up to stabilize caches and branch predictors
-        for (int i = 0; i < 3; i++)
-            ElementWiseMultiply(x, y, z, strides, alignmentOffset);
-    }
+    // Warm-up to stabilize caches and branch predictors
+    for (int i = 0; i < 3; i++)
+        ElementWiseMultiply_SIMD(x, y, z, strides, alignmentOffset);
+    
     auto start = std::chrono::steady_clock::now();//start time
 
-    if(isVectorized){
-        for (int i = 0; i < runs; i++)//run the function for a set number of iterations
-            ElementWiseMultiply_SIMD(x, y, z, strides, alignmentOffset);
-    }
-    else{
-        for (int i = 0; i < runs; i++)//run the function for a set number of iterations
-            ElementWiseMultiply(x, y, z, strides, alignmentOffset);
-    }
+    
+    for (int i = 0; i < runs; i++)//run the function for a set number of iterations
+        ElementWiseMultiply_SIMD(x, y, z, strides, alignmentOffset);
+    
+    
     auto end = std::chrono::steady_clock::now();//end time
     volatile float sink = y[0];
 
@@ -454,13 +373,13 @@ int main(){
         float a2 = dist2(gen2);//generate random float
 
         //benchmark each with default settings
-        results axpyRESFloatAligned2 = BenchmarkAXPY(a2, x2, y2, STRIDE, ALIGNMENTOFFSET, RUNS, true);
+        results axpyRESFloatAligned2 = BenchmarkAXPY(a2, x2, y2, STRIDE, ALIGNMENTOFFSET, RUNS);
         AXPY_Vector.push_back(axpyRESFloatAligned2);
         //printResults(axpyRESFloatAligned2);
-        results dotRESFloatAligned2 = BenchmarkDotProductReduction(x2, y2, STRIDE, ALIGNMENTOFFSET, RUNS, true);
+        results dotRESFloatAligned2 = BenchmarkDotProductReduction(x2, y2, STRIDE, ALIGNMENTOFFSET, RUNS);
         DotProductReduction_Vector.push_back(dotRESFloatAligned2);
         //printResults(dotRESFloatAligned2);
-        results elementwisemultRESFloatAligned2 = BenchmarkElementWiseMultiply(x2, y2, z2, STRIDE, ALIGNMENTOFFSET, RUNS, true);
+        results elementwisemultRESFloatAligned2 = BenchmarkElementWiseMultiply(x2, y2, z2, STRIDE, ALIGNMENTOFFSET, RUNS);
         ElementWiseMultiply_Vector.push_back(elementwisemultRESFloatAligned2);
         //printResults(elementwisemultRESFloatAligned2);
     }

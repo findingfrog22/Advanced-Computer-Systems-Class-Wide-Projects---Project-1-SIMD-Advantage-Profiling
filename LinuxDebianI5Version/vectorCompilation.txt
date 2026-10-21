@@ -1,0 +1,1046 @@
+/usr/include/c++/14/bits/locale_facets.h:1093:16: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/locale_facets.h:884:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_14);
+/usr/include/c++/14/bits/locale_facets.h:885:23: missed: statement clobbers memory: _31 = OBJ_TYPE_REF(_25;_14->6B) (_14, 10);
+/usr/include/c++/14/ostream:745:19: missed: statement clobbers memory: _8 = std::basic_ostream<char>::put (__os_1(D), _7);
+/usr/include/c++/14/ostream:767:24: missed: statement clobbers memory: std::basic_ostream<char>::flush (_8);
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/usr/include/c++/14/bits/basic_ios.h:50:18: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/basic_ios.h:50:18: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+project1Vector.cpp:60:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:60:29: optimized:  loop versioned for vectorization because of possible aliasing
+project1Vector.cpp:60:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:60:29: missed: couldn't vectorize loop
+project1Vector.cpp:60:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:53:6: note: vectorized 1 loops in function.
+project1Vector.cpp:53:6: note: ***** Analysis failed with vector mode V4DI
+project1Vector.cpp:53:6: note: ***** The result for vector mode V32QI would be the same
+project1Vector.cpp:53:6: note: ***** Re-trying analysis with vector mode V16QI
+project1Vector.cpp:53:6: note: ***** Analysis failed with vector mode V16QI
+project1Vector.cpp:53:6: note: ***** Re-trying analysis with vector mode V8QI
+project1Vector.cpp:53:6: note: ***** Analysis failed with vector mode V8QI
+project1Vector.cpp:53:6: note: ***** Re-trying analysis with vector mode V4QI
+project1Vector.cpp:53:6: note: ***** Analysis failed with vector mode V4QI
+project1Vector.cpp:76:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:76:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:76:29: missed: couldn't vectorize loop
+project1Vector.cpp:76:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:68:7: note: vectorized 1 loops in function.
+project1Vector.cpp:68:7: note: ***** Analysis failed with vector mode V4DI
+project1Vector.cpp:68:7: note: ***** The result for vector mode V32QI would be the same
+project1Vector.cpp:68:7: note: ***** Re-trying analysis with vector mode V16QI
+project1Vector.cpp:68:7: note: ***** Analysis failed with vector mode V16QI
+project1Vector.cpp:68:7: note: ***** Re-trying analysis with vector mode V8QI
+project1Vector.cpp:68:7: note: ***** Analysis failed with vector mode V8QI
+project1Vector.cpp:68:7: note: ***** Re-trying analysis with vector mode V4QI
+project1Vector.cpp:68:7: note: ***** Analysis failed with vector mode V4QI
+project1Vector.cpp:95:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:95:29: optimized:  loop versioned for vectorization because of possible aliasing
+project1Vector.cpp:95:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:95:29: missed: couldn't vectorize loop
+project1Vector.cpp:95:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:86:6: note: vectorized 1 loops in function.
+project1Vector.cpp:86:6: note: ***** Analysis failed with vector mode V4DI
+project1Vector.cpp:86:6: note: ***** The result for vector mode V32QI would be the same
+project1Vector.cpp:86:6: note: ***** Re-trying analysis with vector mode V16QI
+project1Vector.cpp:86:6: note: ***** Analysis failed with vector mode V16QI
+project1Vector.cpp:86:6: note: ***** Re-trying analysis with vector mode V8QI
+project1Vector.cpp:86:6: note: ***** Analysis failed with vector mode V8QI
+project1Vector.cpp:86:6: note: ***** Re-trying analysis with vector mode V4QI
+project1Vector.cpp:86:6: note: ***** Analysis failed with vector mode V4QI
+/usr/include/c++/14/ostream:676:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "Elapsed Time (in nanoseconds) across all runs: ", 47);
+/usr/include/c++/14/ostream:179:25: missed: statement clobbers memory: _14 = std::basic_ostream<char>::_M_insert<long unsigned int> (&cout, _1);
+/usr/include/c++/14/ostream:676:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_14, "\nAverage time (in nanoseconds, per run): ", 41);
+/usr/include/c++/14/ostream:179:25: missed: statement clobbers memory: _13 = std::basic_ostream<char>::_M_insert<long unsigned int> (_14, _2);
+/usr/include/c++/14/ostream:676:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_13, "\nNumber of Runs: ", 17);
+/usr/include/c++/14/ostream:179:25: missed: statement clobbers memory: _12 = std::basic_ostream<char>::_M_insert<long unsigned int> (_13, _3);
+/usr/include/c++/14/ostream:676:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_12, "\nTotal floating point operations (all runs): ", 45);
+/usr/include/c++/14/ostream:179:25: missed: statement clobbers memory: _11 = std::basic_ostream<char>::_M_insert<long unsigned int> (_12, _4);
+/usr/include/c++/14/ostream:676:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_11, "\nGFLOPS (avg per run): ", 23);
+/usr/include/c++/14/ostream:239:18: missed: statement clobbers memory: _10 = std::basic_ostream<char>::_M_insert<double> (_11, _9);
+/usr/include/c++/14/ostream:676:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_10, "\nHW Arithmetic Intensity (FLOPS/Byte): ", 39);
+/usr/include/c++/14/ostream:232:25: missed: statement clobbers memory: _8 = std::basic_ostream<char>::_M_insert<double> (_10, _6);
+/usr/include/c++/14/bits/locale_facets.h:884:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_36);
+/usr/include/c++/14/bits/locale_facets.h:885:23: missed: statement clobbers memory: _53 = OBJ_TYPE_REF(_47;_36->6B) (_36, 10);
+/usr/include/c++/14/ostream:745:19: missed: statement clobbers memory: _34 = std::basic_ostream<char>::put (_8, prephitmp_49);
+/usr/include/c++/14/ostream:767:24: missed: statement clobbers memory: std::basic_ostream<char>::flush (_34);
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/usr/include/c++/14/bits/basic_ios.h:50:18: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/basic_ios.h:50:18: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+project1Vector.cpp:119:23: missed: couldn't vectorize loop
+project1Vector.cpp:61:25: missed: not vectorized: complicated access pattern.
+project1Vector.cpp:60:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:60:29: optimized:  loop versioned for vectorization because of possible aliasing
+project1Vector.cpp:60:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:124:23: missed: couldn't vectorize loop
+project1Vector.cpp:61:25: missed: not vectorized: complicated access pattern.
+project1Vector.cpp:60:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:60:29: optimized:  loop versioned for vectorization because of possible aliasing
+project1Vector.cpp:60:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:124:23: missed: couldn't vectorize loop
+project1Vector.cpp:60:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:60:29: missed: couldn't vectorize loop
+project1Vector.cpp:60:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:119:23: missed: couldn't vectorize loop
+project1Vector.cpp:60:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:60:29: missed: couldn't vectorize loop
+project1Vector.cpp:60:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:115:9: note: vectorized 2 loops in function.
+project1Vector.cpp:122:48: missed: statement clobbers memory: start = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:127:46: missed: statement clobbers memory: end = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:128:30: missed: not vectorized: volatile type: sink ={v} _2;
+project1Vector.cpp:153:94: note: ***** Analysis succeeded with vector mode V4DI
+project1Vector.cpp:153:94: note: SLPing BB part
+project1Vector.cpp:153:94: note: Costing subgraph: 
+project1Vector.cpp:153:94: note: node 0x36ea9d48 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:153:94: note: op template: <retval>.elapsed_time = ns_20;
+project1Vector.cpp:153:94: note: 	stmt 0 <retval>.elapsed_time = ns_20;
+project1Vector.cpp:153:94: note: 	stmt 1 <retval>.average_time = timePerRun_21;
+project1Vector.cpp:153:94: note: 	stmt 2 <retval>.runs = runs_15(D);
+project1Vector.cpp:153:94: note: 	stmt 3 <retval>.flop = flopsAllRuns_27;
+project1Vector.cpp:153:94: note: 	children 0x36ea9dc8
+project1Vector.cpp:153:94: note: node (external) 0x36ea9dc8 (max_nunits=1, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:153:94: note: 	{ ns_20, timePerRun_21, runs_15(D), flopsAllRuns_27 }
+project1Vector.cpp:153:94: note: Cost model analysis: 
+project1Vector.cpp:153:94: note: Cost model analysis for part in loop 0:
+  Vector cost: 64
+  Scalar cost: 64
+project1Vector.cpp:153:94: note: Basic block will be vectorized using SLP
+project1Vector.cpp:153:94: optimized: basic block part vectorized using 32 byte vectors
+project1Vector.cpp:153:94: note: Vectorizing SLP tree:
+project1Vector.cpp:153:94: note: node 0x36ea9d48 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:153:94: note: op template: <retval>.elapsed_time = ns_20;
+project1Vector.cpp:153:94: note: 	stmt 0 <retval>.elapsed_time = ns_20;
+project1Vector.cpp:153:94: note: 	stmt 1 <retval>.average_time = timePerRun_21;
+project1Vector.cpp:153:94: note: 	stmt 2 <retval>.runs = runs_15(D);
+project1Vector.cpp:153:94: note: 	stmt 3 <retval>.flop = flopsAllRuns_27;
+project1Vector.cpp:153:94: note: 	children 0x36ea9dc8
+project1Vector.cpp:153:94: note: node (external) 0x36ea9dc8 (max_nunits=1, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:153:94: note: 	{ ns_20, timePerRun_21, runs_15(D), flopsAllRuns_27 }
+project1Vector.cpp:153:94: note: ------>vectorizing SLP node starting from: <retval>.elapsed_time = ns_20;
+project1Vector.cpp:153:94: note: vect_is_simple_use: operand ns_20 / runs_15(D), type of def: internal
+project1Vector.cpp:153:94: note: vect_is_simple_use: operand runs_15(D), type of def: external
+project1Vector.cpp:153:94: note: vect_is_simple_use: operand instructionsAllRuns_26 * 2, type of def: internal
+project1Vector.cpp:153:94: note: transform store. ncopies = 1
+project1Vector.cpp:153:94: note: create vector_type-pointer variable to type: vector(4) long unsigned int  vectorizing a pointer ref: <retval>.elapsed_time
+project1Vector.cpp:153:94: note: created &<retval>
+project1Vector.cpp:153:94: note: add new stmt: MEM <vector(4) long unsigned int> [(long unsigned int *)&<retval>] = _254;
+project1Vector.cpp:153:94: note: vectorizing stmts using SLP.
+project1Vector.cpp:153:94: note: ***** The result for vector mode V32QI would be the same
+project1Vector.cpp:163:23: missed: couldn't vectorize loop
+project1Vector.cpp:163:23: missed: not vectorized: unsupported control flow in loop.
+project1Vector.cpp:76:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:76:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:169:23: missed: couldn't vectorize loop
+project1Vector.cpp:169:23: missed: not vectorized: unsupported control flow in loop.
+project1Vector.cpp:76:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:76:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:169:23: missed: couldn't vectorize loop
+project1Vector.cpp:169:23: missed: not vectorized: unsupported control flow in loop.
+project1Vector.cpp:76:29: missed: couldn't vectorize loop
+project1Vector.cpp:76:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:163:23: missed: couldn't vectorize loop
+project1Vector.cpp:163:23: missed: not vectorized: unsupported control flow in loop.
+project1Vector.cpp:76:29: missed: couldn't vectorize loop
+project1Vector.cpp:76:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:158:9: note: vectorized 2 loops in function.
+project1Vector.cpp:166:48: missed: statement clobbers memory: start = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:172:46: missed: statement clobbers memory: end = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:173:20: missed: not vectorized: volatile type: sink3 ={v} s_109;
+project1Vector.cpp:198:94: note: ***** Analysis succeeded with vector mode V4DI
+project1Vector.cpp:198:94: note: SLPing BB part
+project1Vector.cpp:198:94: note: Costing subgraph: 
+project1Vector.cpp:198:94: note: node 0x36db4d58 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:198:94: note: op template: <retval>.elapsed_time = ns_19;
+project1Vector.cpp:198:94: note: 	stmt 0 <retval>.elapsed_time = ns_19;
+project1Vector.cpp:198:94: note: 	stmt 1 <retval>.average_time = timePerRun_20;
+project1Vector.cpp:198:94: note: 	stmt 2 <retval>.runs = runs_14(D);
+project1Vector.cpp:198:94: note: 	stmt 3 <retval>.flop = flopsAllRuns_27;
+project1Vector.cpp:198:94: note: 	children 0x36db4dd8
+project1Vector.cpp:198:94: note: node (external) 0x36db4dd8 (max_nunits=1, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:198:94: note: 	{ ns_19, timePerRun_20, runs_14(D), flopsAllRuns_27 }
+project1Vector.cpp:198:94: note: Cost model analysis: 
+project1Vector.cpp:198:94: note: Cost model analysis for part in loop 0:
+  Vector cost: 64
+  Scalar cost: 64
+project1Vector.cpp:198:94: note: Basic block will be vectorized using SLP
+project1Vector.cpp:198:94: optimized: basic block part vectorized using 32 byte vectors
+project1Vector.cpp:198:94: note: Vectorizing SLP tree:
+project1Vector.cpp:198:94: note: node 0x36db4d58 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:198:94: note: op template: <retval>.elapsed_time = ns_19;
+project1Vector.cpp:198:94: note: 	stmt 0 <retval>.elapsed_time = ns_19;
+project1Vector.cpp:198:94: note: 	stmt 1 <retval>.average_time = timePerRun_20;
+project1Vector.cpp:198:94: note: 	stmt 2 <retval>.runs = runs_14(D);
+project1Vector.cpp:198:94: note: 	stmt 3 <retval>.flop = flopsAllRuns_27;
+project1Vector.cpp:198:94: note: 	children 0x36db4dd8
+project1Vector.cpp:198:94: note: node (external) 0x36db4dd8 (max_nunits=1, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:198:94: note: 	{ ns_19, timePerRun_20, runs_14(D), flopsAllRuns_27 }
+project1Vector.cpp:198:94: note: ------>vectorizing SLP node starting from: <retval>.elapsed_time = ns_19;
+project1Vector.cpp:198:94: note: vect_is_simple_use: operand ns_19 / runs_14(D), type of def: internal
+project1Vector.cpp:198:94: note: vect_is_simple_use: operand runs_14(D), type of def: external
+project1Vector.cpp:198:94: note: vect_is_simple_use: operand instructionsAllRuns_26 * 2, type of def: internal
+project1Vector.cpp:198:94: note: transform store. ncopies = 1
+project1Vector.cpp:198:94: note: create vector_type-pointer variable to type: vector(4) long unsigned int  vectorizing a pointer ref: <retval>.elapsed_time
+project1Vector.cpp:198:94: note: created &<retval>
+project1Vector.cpp:198:94: note: add new stmt: MEM <vector(4) long unsigned int> [(long unsigned int *)&<retval>] = _232;
+project1Vector.cpp:198:94: note: vectorizing stmts using SLP.
+project1Vector.cpp:198:94: note: ***** The result for vector mode V32QI would be the same
+project1Vector.cpp:206:23: missed: couldn't vectorize loop
+project1Vector.cpp:206:23: missed: not vectorized: inner-loop count not invariant.
+project1Vector.cpp:95:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:95:29: optimized:  loop versioned for vectorization because of possible aliasing
+project1Vector.cpp:95:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:212:23: missed: couldn't vectorize loop
+project1Vector.cpp:96:25: missed: not vectorized: complicated access pattern.
+project1Vector.cpp:95:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:95:29: optimized:  loop versioned for vectorization because of possible aliasing
+project1Vector.cpp:95:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:212:23: missed: couldn't vectorize loop
+project1Vector.cpp:95:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:95:29: missed: couldn't vectorize loop
+project1Vector.cpp:95:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:206:23: missed: couldn't vectorize loop
+project1Vector.cpp:95:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:95:29: missed: couldn't vectorize loop
+project1Vector.cpp:95:29: missed: not vectorized: number of iterations cannot be computed.
+project1Vector.cpp:203:9: note: vectorized 2 loops in function.
+project1Vector.cpp:209:48: missed: statement clobbers memory: start = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:216:46: missed: statement clobbers memory: end = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:217:30: missed: not vectorized: volatile type: sink ={v} _2;
+project1Vector.cpp:242:94: note: ***** Analysis succeeded with vector mode V4DI
+project1Vector.cpp:242:94: note: SLPing BB part
+project1Vector.cpp:242:94: note: Costing subgraph: 
+project1Vector.cpp:242:94: note: node 0x36efdcc8 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:242:94: note: op template: <retval>.elapsed_time = ns_20;
+project1Vector.cpp:242:94: note: 	stmt 0 <retval>.elapsed_time = ns_20;
+project1Vector.cpp:242:94: note: 	stmt 1 <retval>.average_time = timePerRun_21;
+project1Vector.cpp:242:94: note: 	stmt 2 <retval>.runs = runs_15(D);
+project1Vector.cpp:242:94: note: 	stmt 3 <retval>.flop = instructionsAllRuns_26;
+project1Vector.cpp:242:94: note: 	children 0x36efdd48
+project1Vector.cpp:242:94: note: node (external) 0x36efdd48 (max_nunits=1, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:242:94: note: 	{ ns_20, timePerRun_21, runs_15(D), instructionsAllRuns_26 }
+project1Vector.cpp:242:94: note: Cost model analysis: 
+project1Vector.cpp:242:94: note: Cost model analysis for part in loop 0:
+  Vector cost: 64
+  Scalar cost: 64
+project1Vector.cpp:242:94: note: Basic block will be vectorized using SLP
+project1Vector.cpp:242:94: optimized: basic block part vectorized using 32 byte vectors
+project1Vector.cpp:242:94: note: Vectorizing SLP tree:
+project1Vector.cpp:242:94: note: node 0x36efdcc8 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:242:94: note: op template: <retval>.elapsed_time = ns_20;
+project1Vector.cpp:242:94: note: 	stmt 0 <retval>.elapsed_time = ns_20;
+project1Vector.cpp:242:94: note: 	stmt 1 <retval>.average_time = timePerRun_21;
+project1Vector.cpp:242:94: note: 	stmt 2 <retval>.runs = runs_15(D);
+project1Vector.cpp:242:94: note: 	stmt 3 <retval>.flop = instructionsAllRuns_26;
+project1Vector.cpp:242:94: note: 	children 0x36efdd48
+project1Vector.cpp:242:94: note: node (external) 0x36efdd48 (max_nunits=1, refcnt=1) vector(4) long unsigned int
+project1Vector.cpp:242:94: note: 	{ ns_20, timePerRun_21, runs_15(D), instructionsAllRuns_26 }
+project1Vector.cpp:242:94: note: ------>vectorizing SLP node starting from: <retval>.elapsed_time = ns_20;
+project1Vector.cpp:242:94: note: vect_is_simple_use: operand ns_20 / runs_15(D), type of def: internal
+project1Vector.cpp:242:94: note: vect_is_simple_use: operand runs_15(D), type of def: external
+project1Vector.cpp:242:94: note: vect_is_simple_use: operand runs_15(D) * instructionsPerRun_25, type of def: internal
+project1Vector.cpp:242:94: note: transform store. ncopies = 1
+project1Vector.cpp:242:94: note: create vector_type-pointer variable to type: vector(4) long unsigned int  vectorizing a pointer ref: <retval>.elapsed_time
+project1Vector.cpp:242:94: note: created &<retval>
+project1Vector.cpp:242:94: note: add new stmt: MEM <vector(4) long unsigned int> [(long unsigned int *)&<retval>] = _207;
+project1Vector.cpp:242:94: note: vectorizing stmts using SLP.
+project1Vector.cpp:242:94: note: ***** The result for vector mode V32QI would be the same
+/usr/include/c++/14/bits/stl_vector.h:678:7: missed: splitting region at control altering definition _36 = operator new (_6);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _36 = operator new (_6);
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis succeeded with vector mode V4DI
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x36efdd48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)this_2(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)this_2(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)this_2(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x36efddc8
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x36efddc8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Basic block will be vectorized using SLP
+/usr/include/c++/14/bits/stl_vector.h:99:4: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x36efdd48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)this_2(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)this_2(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)this_2(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x36efddc8
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x36efddc8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ------>vectorizing SLP node starting from: MEM[(struct _Vector_impl_data *)this_2(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: vect_is_simple_use: operand 0B, type of def: constant
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: MEM[(struct _Vector_impl_data *)this_2(D)]._M_start
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: created vectp.926_32
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int * *)vectp.926_32] = { 0, 0 };
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** The result for vector mode V32QI would be the same
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: splitting region at dominance boundary bb7
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:99:4: missed: splitting region at dominance boundary bb10
+/usr/include/c++/14/bits/stl_algobase.h:452:23: missed: statement clobbers memory: __builtin_memcpy (_36, __l$_M_array_17, _6);
+/usr/include/c++/14/bits/stl_algobase.h:452:23: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/stl_algobase.h:452:23: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/stl_algobase.h:452:23: missed: splitting region at dominance boundary bb3
+/usr/include/c++/14/bits/stl_vector.h:684:7: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/stl_vector.h:684:7: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/stl_vector.h:684:7: missed: splitting region at dominance boundary bb11
+/usr/include/c++/14/bits/stl_vector.h:1920:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("cannot create std::vector larger than max_size()");
+/usr/include/c++/14/bits/stl_vector.h:1920:24: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_9, _11);
+/usr/include/c++/14/bits/stl_vector.h:370:7: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/stl_vector.h:370:7: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: statement clobbers memory: _46 = operator new (prephitmp_36);
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: more than one data ref in stmt: *_2 = *__args#0_14(D);
+/usr/include/c++/14/bits/stl_uninitialized.h:1129:20: missed: statement clobbers memory: __builtin_memcpy (_46, _29, _1);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_29, _21);
+/usr/include/c++/14/bits/stl_vector.h:1909:24: missed: statement clobbers memory: std::__throw_length_error ("vector::_M_realloc_append");
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** Analysis succeeded with vector mode V4DI
+/usr/include/c++/14/bits/vector.tcc:692:30: note: SLPing BB part
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Costing subgraph: 
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node 0x36efdd48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: op template: this_8(D)->D.125310._M_impl.D.124645._M_start = _46;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 0 this_8(D)->D.125310._M_impl.D.124645._M_start = _46;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 1 this_8(D)->D.125310._M_impl.D.124645._M_finish = _15;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	children 0x36efde48
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node (external) 0x36efde48 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	{ _46, _15 }
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Cost model analysis: 
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Basic block will be vectorized using SLP
+/usr/include/c++/14/bits/vector.tcc:692:30: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/vector.tcc:692:30: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node 0x36efdd48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: op template: this_8(D)->D.125310._M_impl.D.124645._M_start = _46;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 0 this_8(D)->D.125310._M_impl.D.124645._M_start = _46;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	stmt 1 this_8(D)->D.125310._M_impl.D.124645._M_finish = _15;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	children 0x36efde48
+/usr/include/c++/14/bits/vector.tcc:692:30: note: node (external) 0x36efde48 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/vector.tcc:692:30: note: 	{ _46, _15 }
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ------>vectorizing SLP node starting from: this_8(D)->D.125310._M_impl.D.124645._M_start = _46;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: vect_is_simple_use: operand _46 + _43, type of def: internal
+/usr/include/c++/14/bits/vector.tcc:692:30: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/vector.tcc:692:30: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: this_8(D)->D.125310._M_impl.D.124645._M_start
+/usr/include/c++/14/bits/vector.tcc:692:30: note: created vectp.933_27
+/usr/include/c++/14/bits/vector.tcc:692:30: note: add new stmt: MEM <vector(2) long unsigned int> [(struct results * *)vectp.933_27] = _45;
+/usr/include/c++/14/bits/vector.tcc:692:30: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/vector.tcc:692:30: note: ***** The result for vector mode V32QI would be the same
+/usr/include/c++/14/bits/random.tcc:412:42: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/14/bits/random.tcc:404:32: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/14/bits/random.tcc:404:32: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/14/bits/random.tcc:397:5: note: vectorized 2 loops in function.
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis succeeded with vector mode V4DI
+/usr/include/c++/14/bits/random.tcc:420:17: note: SLPing BB part
+/usr/include/c++/14/bits/random.tcc:406:14: note: Costing subgraph: 
+/usr/include/c++/14/bits/random.tcc:406:14: note: node 0x36efdd48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:406:14: note: op template: _178 = _177 & 18446744071562067968;
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	stmt 0 _178 = _177 & 18446744071562067968;
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	stmt 1 _181 = _180 & 2147483647;
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	children 0x36efddc8 0x36efde48
+/usr/include/c++/14/bits/random.tcc:406:14: note: node 0x36efddc8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:406:14: note: op template: _177 = this_40(D)->_M_x[226];
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	stmt 0 _177 = this_40(D)->_M_x[226];
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	stmt 1 _180 = this_40(D)->_M_x[227];
+/usr/include/c++/14/bits/random.tcc:406:14: note: node (constant) 0x36efde48 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	{ 18446744071562067968, 2147483647 }
+/usr/include/c++/14/bits/random.tcc:406:14: note: Cost model analysis: 
+/usr/include/c++/14/bits/random.tcc:406:14: note: Cost model analysis for part in loop 0:
+  Vector cost: 48
+  Scalar cost: 36
+/usr/include/c++/14/bits/random.tcc:406:14: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/random.tcc:420:17: note: Costing subgraph: 
+/usr/include/c++/14/bits/random.tcc:420:17: note: node 0x36efdf48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:420:17: note: op template: _24 = _23 & 18446744071562067968;
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	stmt 0 _24 = _23 & 18446744071562067968;
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	stmt 1 _26 = _25 & 2147483647;
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	children 0x36efdfc8 0x36efe048
+/usr/include/c++/14/bits/random.tcc:420:17: note: node 0x36efdfc8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:420:17: note: op template: _23 = this_40(D)->_M_x[623];
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	stmt 0 _23 = this_40(D)->_M_x[623];
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	stmt 1 _25 = this_40(D)->_M_x[0];
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	load permutation { 623 0 }
+/usr/include/c++/14/bits/random.tcc:420:17: note: node (constant) 0x36efe048 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	{ 18446744071562067968, 2147483647 }
+/usr/include/c++/14/bits/random.tcc:420:17: note: Cost model analysis: 
+/usr/include/c++/14/bits/random.tcc:420:17: note: Cost model analysis for part in loop 0:
+  Vector cost: 5028
+  Scalar cost: 36
+/usr/include/c++/14/bits/random.tcc:420:17: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** The result for vector mode V32QI would be the same
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode V16QI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis succeeded with vector mode V16QI
+/usr/include/c++/14/bits/random.tcc:420:17: note: SLPing BB part
+/usr/include/c++/14/bits/random.tcc:406:14: note: Costing subgraph: 
+/usr/include/c++/14/bits/random.tcc:406:14: note: node 0x36efe048 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:406:14: note: op template: _178 = _177 & 18446744071562067968;
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	stmt 0 _178 = _177 & 18446744071562067968;
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	stmt 1 _181 = _180 & 2147483647;
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	children 0x36efdfc8 0x36efdd48
+/usr/include/c++/14/bits/random.tcc:406:14: note: node 0x36efdfc8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:406:14: note: op template: _177 = this_40(D)->_M_x[226];
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	stmt 0 _177 = this_40(D)->_M_x[226];
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	stmt 1 _180 = this_40(D)->_M_x[227];
+/usr/include/c++/14/bits/random.tcc:406:14: note: node (constant) 0x36efdd48 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:406:14: note: 	{ 18446744071562067968, 2147483647 }
+/usr/include/c++/14/bits/random.tcc:406:14: note: Cost model analysis: 
+/usr/include/c++/14/bits/random.tcc:406:14: note: Cost model analysis for part in loop 0:
+  Vector cost: 48
+  Scalar cost: 36
+/usr/include/c++/14/bits/random.tcc:406:14: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/random.tcc:420:17: note: Costing subgraph: 
+/usr/include/c++/14/bits/random.tcc:420:17: note: node 0x36efddc8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:420:17: note: op template: _24 = _23 & 18446744071562067968;
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	stmt 0 _24 = _23 & 18446744071562067968;
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	stmt 1 _26 = _25 & 2147483647;
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	children 0x36efdcc8 0x36efdec8
+/usr/include/c++/14/bits/random.tcc:420:17: note: node 0x36efdcc8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:420:17: note: op template: _23 = this_40(D)->_M_x[623];
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	stmt 0 _23 = this_40(D)->_M_x[623];
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	stmt 1 _25 = this_40(D)->_M_x[0];
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	load permutation { 623 0 }
+/usr/include/c++/14/bits/random.tcc:420:17: note: node (constant) 0x36efdec8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/random.tcc:420:17: note: 	{ 18446744071562067968, 2147483647 }
+/usr/include/c++/14/bits/random.tcc:420:17: note: Cost model analysis: 
+/usr/include/c++/14/bits/random.tcc:420:17: note: Cost model analysis for part in loop 0:
+  Vector cost: 5028
+  Scalar cost: 36
+/usr/include/c++/14/bits/random.tcc:420:17: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V8QI
+/usr/include/c++/14/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode V4QI
+/usr/include/c++/14/bits/random.tcc:422:38: note: ***** Analysis failed with vector mode V4QI
+/usr/include/c++/14/bits/stl_algo.h:4354:22: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/stl_algo.h:4354:22: missed: not vectorized: unsupported control flow in loop.
+/usr/include/c++/14/bits/random.tcc:333:32: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/random.tcc:335:14: missed: not vectorized: no vectype for stmt: __x_18 = MEM[(struct mersenne_twister_engine *)&rng]._M_x[_17];
+ scalar_type: long unsigned int
+project1Vector.cpp:19:20: note: vectorized 0 loops in function.
+project1Vector.cpp:19:20: missed: splitting region at control altering definition _16 = std::random_device::_M_getval (&D.122316);
+/usr/include/c++/14/bits/char_traits.h:427:49: missed: statement clobbers memory: __builtin_memcpy (&D.138030.D.79575._M_local_buf, "default", 7);
+/usr/include/c++/14/bits/random.h:1760:30: missed: not vectorized: statement can throw an exception: std::random_device::_M_init (&D.122316, &D.138030);
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.138030);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_54, _57);
+/usr/include/c++/14/bits/random.h:1782:29: missed: not vectorized: statement can throw an exception: _16 = std::random_device::_M_getval (&D.122316);
+/usr/include/c++/14/bits/random.h:1782:29: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/random.h:1782:29: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/random.h:1782:29: missed: splitting region at dominance boundary bb9
+/usr/include/c++/14/bits/random.h:1766:14: missed: statement clobbers memory: std::random_device::_M_fini (&D.122316);
+/usr/include/c++/14/bits/random.h:1766:18: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/random.h:1766:18: missed: splitting region at dominance boundary bb5
+/usr/include/c++/14/bits/random.h:1766:14: missed: statement clobbers memory: std::random_device::_M_fini (&D.122316);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: statement clobbers memory: _85 = operator new (_84);
+/usr/include/c++/14/bits/stl_algobase.h:952:11: missed: statement clobbers memory: __builtin_memset (__first_86, 0, _139);
+/usr/include/c++/14/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&rng);
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** Analysis succeeded with vector mode V4DI
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x36e89da8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)vec_8(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)vec_8(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)vec_8(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x36e89e28
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x36e89e28 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node 0x36e89f28 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: op template: MEM[(struct _Vector_base *)vec_8(D)]._M_impl.D.121646._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 0 MEM[(struct _Vector_base *)vec_8(D)]._M_impl.D.121646._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 1 *vec_8(D).D.122311._M_impl.D.121646._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	children 0x36e89fa8
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node (constant) 0x36e89fa8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Basic block will be vectorized using SLP
+/usr/include/c++/14/bits/stl_vector.h:99:4: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node 0x36e89da8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: op template: MEM[(struct _Vector_impl_data *)vec_8(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 0 MEM[(struct _Vector_impl_data *)vec_8(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	stmt 1 MEM[(struct _Vector_impl_data *)vec_8(D)]._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	children 0x36e89e28
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: node (constant) 0x36e89e28 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: ------>vectorizing SLP node starting from: MEM[(struct _Vector_impl_data *)vec_8(D)]._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: vect_is_simple_use: operand 0B, type of def: constant
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: MEM[(struct _Vector_impl_data *)vec_8(D)]._M_start
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: created vectp.1035_130
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: add new stmt: MEM <vector(2) long unsigned int> [(float * *)vectp.1035_130] = { 0, 0 };
+/usr/include/c++/14/bits/stl_vector.h:99:4: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node 0x36e89f28 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: op template: MEM[(struct _Vector_base *)vec_8(D)]._M_impl.D.121646._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 0 MEM[(struct _Vector_base *)vec_8(D)]._M_impl.D.121646._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	stmt 1 *vec_8(D).D.122311._M_impl.D.121646._M_finish = 0B;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	children 0x36e89fa8
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: node (constant) 0x36e89fa8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: 	{ 0B, 0B }
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ------>vectorizing SLP node starting from: MEM[(struct _Vector_base *)vec_8(D)]._M_impl.D.121646._M_start = 0B;
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: vect_is_simple_use: operand 0B, type of def: constant
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: MEM[(struct _Vector_base *)vec_8(D)]._M_impl.D.121646._M_start
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: created vectp.1037_125
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: add new stmt: MEM <vector(2) long unsigned int> [(float * *)vectp.1037_125] = { 0, 0 };
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/stl_vector.h:398:25: note: ***** The result for vector mode V32QI would be the same
+/usr/include/c++/14/bits/basic_string.h:272:29: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: couldn't vectorize loop
+project1Vector.cpp:391:20: missed: not vectorized: unsupported control flow in loop.
+project1Vector.cpp:364:20: missed: couldn't vectorize loop
+project1Vector.cpp:364:20: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+project1Vector.cpp:212:23: missed: couldn't vectorize loop
+project1Vector.cpp:96:25: missed: not vectorized: complicated access pattern.
+project1Vector.cpp:95:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:95:29: optimized:  loop versioned for vectorization because of possible aliasing
+project1Vector.cpp:95:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:206:23: missed: couldn't vectorize loop
+project1Vector.cpp:96:25: missed: not vectorized: complicated access pattern.
+project1Vector.cpp:95:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:95:29: optimized:  loop versioned for vectorization because of possible aliasing
+project1Vector.cpp:95:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:169:23: missed: couldn't vectorize loop
+project1Vector.cpp:169:23: missed: not vectorized: unsupported control flow in loop.
+project1Vector.cpp:76:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:76:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:124:23: missed: couldn't vectorize loop
+project1Vector.cpp:61:25: missed: not vectorized: complicated access pattern.
+project1Vector.cpp:60:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:60:29: optimized:  loop versioned for vectorization because of possible aliasing
+project1Vector.cpp:60:29: optimized: loop vectorized using 16 byte vectors
+project1Vector.cpp:119:23: missed: couldn't vectorize loop
+project1Vector.cpp:61:25: missed: not vectorized: complicated access pattern.
+project1Vector.cpp:60:29: optimized: loop vectorized using 32 byte vectors
+project1Vector.cpp:60:29: optimized:  loop versioned for vectorization because of possible aliasing
+project1Vector.cpp:60:29: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/14/bits/random.tcc:333:32: missed: couldn't vectorize loop
+/usr/include/c++/14/bits/random.tcc:335:14: missed: not vectorized: no vectype for stmt: __x_26 = MEM[(struct mersenne_twister_engine *)&gen2]._M_x[_28];
+ scalar_type: long unsigned int
+project1Vector.cpp:250:5: note: vectorized 5 loops in function.
+project1Vector.cpp:250:5: missed: splitting region at control altering definition x2 = generateRandomFloatVector (_2); [return slot optimization]
+project1Vector.cpp:266:48: missed: statement clobbers memory: std::vector<long unsigned int>::vector (&strideValues, D.124205, &D.124216);
+project1Vector.cpp:290:5: missed: statement clobbers memory: __builtin_memset (&MEM <char> [(void *)&cpuset + 8B], 0, 120);
+project1Vector.cpp:292:27: missed: statement clobbers memory: pthread_setaffinity_np (_1, 128, &cpuset);
+project1Vector.cpp:329:5: missed: not vectorized: statement can throw an exception: std::vector<long unsigned int>::vector (&workingSetSizes, D.125385, &D.125386);
+/usr/include/c++/14/ostream:676:18: missed: not vectorized: statement can throw an exception: std::__ostream_insert<char, std::char_traits<char> > (&cout, "\nAuto-Vectorization: Locality sweep: \n", 38);
+/usr/include/c++/14/ostream:121:13: missed: not vectorized: statement can throw an exception: std::endl.isra (&cout);
+project1Vector.cpp:366:60: missed: not vectorized: statement can throw an exception: x2 = generateRandomFloatVector (_2); [return slot optimization]
+project1Vector.cpp:366:60: note: ***** Analysis failed with vector mode V4DI
+project1Vector.cpp:366:60: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+project1Vector.cpp:366:60: missed: splitting region at control altering definition y2 = generateRandomFloatVector (_2); [return slot optimization]
+project1Vector.cpp:367:60: missed: not vectorized: statement can throw an exception: y2 = generateRandomFloatVector (_2); [return slot optimization]
+project1Vector.cpp:367:60: note: ***** Analysis failed with vector mode V4DI
+project1Vector.cpp:367:60: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+project1Vector.cpp:367:60: missed: splitting region at control altering definition _274 = operator new (_273);
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: not vectorized: statement can throw an exception: _274 = operator new (_273);
+/usr/include/c++/14/bits/new_allocator.h:151:48: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/new_allocator.h:151:48: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/new_allocator.h:151:48: missed: splitting region at dominance boundary bb17
+/usr/include/c++/14/bits/stl_algobase.h:952:11: missed: statement clobbers memory: __builtin_memset (_274, 0, _813);
+/usr/include/c++/14/bits/stl_algobase.h:952:11: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_algobase.h:952:11: missed: splitting region at control altering definition _41 = std::random_device::_M_getval (&rd2);
+/usr/include/c++/14/bits/char_traits.h:427:49: missed: statement clobbers memory: __builtin_memcpy (&D.138171.D.79575._M_local_buf, "default", 7);
+/usr/include/c++/14/bits/random.h:1760:30: missed: not vectorized: statement can throw an exception: std::random_device::_M_init (&rd2, &D.138171);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_287, _290);
+/usr/include/c++/14/bits/random.h:1782:29: missed: not vectorized: statement can throw an exception: _41 = std::random_device::_M_getval (&rd2);
+/usr/include/c++/14/bits/random.h:1782:29: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/random.h:1782:29: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/random.h:1782:29: missed: splitting region at dominance boundary bb14
+/usr/include/c++/14/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&gen2);
+project1Vector.cpp:122:48: missed: statement clobbers memory: start = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:127:46: missed: statement clobbers memory: end = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:128:30: missed: not vectorized: volatile type: sink ={v} _302;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: missed: not vectorized: statement can throw an exception: std::vector<results>::_M_realloc_append<const results&> (&AXPY_Vector, &axpyRESFloatAligned2);
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: more than one data ref in stmt: *AXPY_Vector$_M_finish_860 = axpyRESFloatAligned2;
+project1Vector.cpp:166:48: missed: statement clobbers memory: start = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:172:46: missed: statement clobbers memory: end = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:173:20: missed: not vectorized: volatile type: sink3 ={v} _487;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: missed: not vectorized: statement can throw an exception: std::vector<results>::_M_realloc_append<const results&> (&DotProductReduction_Vector, &dotRESFloatAligned2);
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: more than one data ref in stmt: *DotProductReduction_Vector$_M_finish_296 = dotRESFloatAligned2;
+project1Vector.cpp:209:48: missed: statement clobbers memory: start = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:216:46: missed: statement clobbers memory: end = std::chrono::_V2::steady_clock::now ();
+project1Vector.cpp:217:30: missed: not vectorized: volatile type: sink ={v} _510;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: missed: not vectorized: statement can throw an exception: std::vector<results>::_M_realloc_append<const results&> (&ElementWiseMultiply_Vector, &elementwisemultRESFloatAligned2);
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: not vectorized: more than one data ref in stmt: *ElementWiseMultiply_Vector$_M_finish_629 = elementwisemultRESFloatAligned2;
+/usr/include/c++/14/bits/random.h:1766:14: missed: statement clobbers memory: std::random_device::_M_fini (&rd2);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (iftmp.7_530, _93);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (y2$D122311$_M_impl$D121646$_M_start_845, _92);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (x2$_M_impl$D121646$_M_start_667, _88);
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Analysis succeeded with vector mode V4DI
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: SLPing BB part
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36eb9dd8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: MEM <struct results *> [(struct vector *)&AXPY_Vector] = AXPY_Vector$_M_start_230;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 MEM <struct results *> [(struct vector *)&AXPY_Vector] = AXPY_Vector$_M_start_230;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 MEM <struct results *> [(struct vector *)&AXPY_Vector + 8B] = AXPY_Vector$_M_finish_860;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36eb9e58
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36eb9e58 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ AXPY_Vector$_M_start_230, AXPY_Vector$_M_finish_860 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36eb9f58 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: axpyRESFloatAligned2.elapsed_time = ns_306;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 axpyRESFloatAligned2.elapsed_time = ns_306;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 axpyRESFloatAligned2.average_time = timePerRun_307;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36eba058
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36eba058 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ ns_306, timePerRun_307 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x36eba1d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: axpyRESFloatAligned2.elapsed_time = ns_306;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 axpyRESFloatAligned2.elapsed_time = ns_306;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 axpyRESFloatAligned2.average_time = timePerRun_307;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x36eba258
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x36eba258 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ ns_306, timePerRun_307 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36eba3d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: MEM <struct results *> [(struct vector *)&DotProductReduction_Vector] = DotProductReduction_Vector$_M_start_444;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 MEM <struct results *> [(struct vector *)&DotProductReduction_Vector] = DotProductReduction_Vector$_M_start_444;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 MEM <struct results *> [(struct vector *)&DotProductReduction_Vector + 8B] = DotProductReduction_Vector$_M_finish_296;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36eba458
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36eba458 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ DotProductReduction_Vector$_M_start_444, DotProductReduction_Vector$_M_finish_296 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36eba558 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: dotRESFloatAligned2.elapsed_time = ns_423;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 dotRESFloatAligned2.elapsed_time = ns_423;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 dotRESFloatAligned2.average_time = timePerRun_424;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36eba658
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36eba658 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ ns_423, timePerRun_424 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x36eba7d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: dotRESFloatAligned2.elapsed_time = ns_423;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 dotRESFloatAligned2.elapsed_time = ns_423;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 dotRESFloatAligned2.average_time = timePerRun_424;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x36eba858
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x36eba858 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ ns_423, timePerRun_424 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36eba9d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: MEM <struct results *> [(struct vector *)&ElementWiseMultiply_Vector] = ElementWiseMultiply_Vector$_M_start_300;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 MEM <struct results *> [(struct vector *)&ElementWiseMultiply_Vector] = ElementWiseMultiply_Vector$_M_start_300;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 MEM <struct results *> [(struct vector *)&ElementWiseMultiply_Vector + 8B] = ElementWiseMultiply_Vector$_M_finish_629;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36ebaa58
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36ebaa58 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ ElementWiseMultiply_Vector$_M_start_300, ElementWiseMultiply_Vector$_M_finish_629 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Costing subgraph: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36ebab58 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: elementwisemultRESFloatAligned2.elapsed_time = ns_514;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 elementwisemultRESFloatAligned2.elapsed_time = ns_514;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 elementwisemultRESFloatAligned2.average_time = timePerRun_515;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36ebac58
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36ebac58 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ ns_514, timePerRun_515 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis: 
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Costing subgraph: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x36ebadd8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: elementwisemultRESFloatAligned2.elapsed_time = ns_514;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 elementwisemultRESFloatAligned2.elapsed_time = ns_514;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 elementwisemultRESFloatAligned2.average_time = timePerRun_515;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x36ebae58
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x36ebae58 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ ns_514, timePerRun_515 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis: 
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Cost model analysis for part in loop 1:
+  Vector cost: 32
+  Scalar cost: 32
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Basic block will be vectorized using SLP
+/usr/include/c++/14/bits/stl_vector.h:1294:21: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36eb9dd8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: MEM <struct results *> [(struct vector *)&AXPY_Vector] = AXPY_Vector$_M_start_230;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 MEM <struct results *> [(struct vector *)&AXPY_Vector] = AXPY_Vector$_M_start_230;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 MEM <struct results *> [(struct vector *)&AXPY_Vector + 8B] = AXPY_Vector$_M_finish_860;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36eb9e58
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36eb9e58 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ AXPY_Vector$_M_start_230, AXPY_Vector$_M_finish_860 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ------>vectorizing SLP node starting from: MEM <struct results *> [(struct vector *)&AXPY_Vector] = AXPY_Vector$_M_start_230;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vect_is_simple_use: operand AXPY_Vector$_M_finish_860 = PHI <AXPY_Vector$_M_finish_733(215), 0B(207)>, type of def: external
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: MEM <struct results *> [(struct vector *)&AXPY_Vector]
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: created &MEM <struct results *> [(struct vector *)&AXPY_Vector]
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: add new stmt: MEM <vector(2) long unsigned int> [(struct vector *)&AXPY_Vector] = _1018;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/stl_vector.h:1294:21: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36eb9f58 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: axpyRESFloatAligned2.elapsed_time = ns_306;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 axpyRESFloatAligned2.elapsed_time = ns_306;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 axpyRESFloatAligned2.average_time = timePerRun_307;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36eba058
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36eba058 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ ns_306, timePerRun_307 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ------>vectorizing SLP node starting from: axpyRESFloatAligned2.elapsed_time = ns_306;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vect_is_simple_use: operand ns_306 / 20, type of def: internal
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: axpyRESFloatAligned2.elapsed_time
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: created &axpyRESFloatAligned2
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&axpyRESFloatAligned2] = _1027;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/new_allocator.h:191:4: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x36eba1d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: axpyRESFloatAligned2.elapsed_time = ns_306;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 axpyRESFloatAligned2.elapsed_time = ns_306;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 axpyRESFloatAligned2.average_time = timePerRun_307;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x36eba258
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x36eba258 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ ns_306, timePerRun_307 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ------>vectorizing SLP node starting from: axpyRESFloatAligned2.elapsed_time = ns_306;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: vect_is_simple_use: operand ns_306 / 20, type of def: internal
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: axpyRESFloatAligned2.elapsed_time
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: created &axpyRESFloatAligned2
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&axpyRESFloatAligned2] = _1271;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/stl_vector.h:1294:21: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36eba3d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: MEM <struct results *> [(struct vector *)&DotProductReduction_Vector] = DotProductReduction_Vector$_M_start_444;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 MEM <struct results *> [(struct vector *)&DotProductReduction_Vector] = DotProductReduction_Vector$_M_start_444;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 MEM <struct results *> [(struct vector *)&DotProductReduction_Vector + 8B] = DotProductReduction_Vector$_M_finish_296;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36eba458
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36eba458 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ DotProductReduction_Vector$_M_start_444, DotProductReduction_Vector$_M_finish_296 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ------>vectorizing SLP node starting from: MEM <struct results *> [(struct vector *)&DotProductReduction_Vector] = DotProductReduction_Vector$_M_start_444;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vect_is_simple_use: operand DotProductReduction_Vector$_M_finish_296 = PHI <DotProductReduction_Vector$_M_finish_718(215), 0B(207)>, type of def: external
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: MEM <struct results *> [(struct vector *)&DotProductReduction_Vector]
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: created &MEM <struct results *> [(struct vector *)&DotProductReduction_Vector]
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: add new stmt: MEM <vector(2) long unsigned int> [(struct vector *)&DotProductReduction_Vector] = _1110;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/stl_vector.h:1294:21: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36eba558 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: dotRESFloatAligned2.elapsed_time = ns_423;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 dotRESFloatAligned2.elapsed_time = ns_423;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 dotRESFloatAligned2.average_time = timePerRun_424;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36eba658
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36eba658 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ ns_423, timePerRun_424 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ------>vectorizing SLP node starting from: dotRESFloatAligned2.elapsed_time = ns_423;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vect_is_simple_use: operand ns_423 / 20, type of def: internal
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: dotRESFloatAligned2.elapsed_time
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: created &dotRESFloatAligned2
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&dotRESFloatAligned2] = _56;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/new_allocator.h:191:4: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x36eba7d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: dotRESFloatAligned2.elapsed_time = ns_423;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 dotRESFloatAligned2.elapsed_time = ns_423;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 dotRESFloatAligned2.average_time = timePerRun_424;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x36eba858
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x36eba858 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ ns_423, timePerRun_424 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ------>vectorizing SLP node starting from: dotRESFloatAligned2.elapsed_time = ns_423;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: vect_is_simple_use: operand ns_423 / 20, type of def: internal
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: dotRESFloatAligned2.elapsed_time
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: created &dotRESFloatAligned2
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&dotRESFloatAligned2] = _55;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/stl_vector.h:1294:21: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36eba9d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: MEM <struct results *> [(struct vector *)&ElementWiseMultiply_Vector] = ElementWiseMultiply_Vector$_M_start_300;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 MEM <struct results *> [(struct vector *)&ElementWiseMultiply_Vector] = ElementWiseMultiply_Vector$_M_start_300;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 MEM <struct results *> [(struct vector *)&ElementWiseMultiply_Vector + 8B] = ElementWiseMultiply_Vector$_M_finish_629;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36ebaa58
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36ebaa58 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ ElementWiseMultiply_Vector$_M_start_300, ElementWiseMultiply_Vector$_M_finish_629 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ------>vectorizing SLP node starting from: MEM <struct results *> [(struct vector *)&ElementWiseMultiply_Vector] = ElementWiseMultiply_Vector$_M_start_300;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vect_is_simple_use: operand ElementWiseMultiply_Vector$_M_finish_629 = PHI <ElementWiseMultiply_Vector$_M_finish_337(215), 0B(207)>, type of def: external
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: MEM <struct results *> [(struct vector *)&ElementWiseMultiply_Vector]
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: created &MEM <struct results *> [(struct vector *)&ElementWiseMultiply_Vector]
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: add new stmt: MEM <vector(2) long unsigned int> [(struct vector *)&ElementWiseMultiply_Vector] = _889;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/stl_vector.h:1294:21: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node 0x36ebab58 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: op template: elementwisemultRESFloatAligned2.elapsed_time = ns_514;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 0 elementwisemultRESFloatAligned2.elapsed_time = ns_514;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	stmt 1 elementwisemultRESFloatAligned2.average_time = timePerRun_515;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	children 0x36ebac58
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: node (external) 0x36ebac58 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: 	{ ns_514, timePerRun_515 }
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ------>vectorizing SLP node starting from: elementwisemultRESFloatAligned2.elapsed_time = ns_514;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vect_is_simple_use: operand ns_514 / 20, type of def: internal
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: elementwisemultRESFloatAligned2.elapsed_time
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: created &elementwisemultRESFloatAligned2
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&elementwisemultRESFloatAligned2] = _891;
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/new_allocator.h:191:4: optimized: basic block part vectorized using 16 byte vectors
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: Vectorizing SLP tree:
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node 0x36ebadd8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: op template: elementwisemultRESFloatAligned2.elapsed_time = ns_514;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 0 elementwisemultRESFloatAligned2.elapsed_time = ns_514;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	stmt 1 elementwisemultRESFloatAligned2.average_time = timePerRun_515;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	children 0x36ebae58
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: node (external) 0x36ebae58 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: 	{ ns_514, timePerRun_515 }
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ------>vectorizing SLP node starting from: elementwisemultRESFloatAligned2.elapsed_time = ns_514;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: vect_is_simple_use: operand ns_514 / 20, type of def: internal
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: transform store. ncopies = 1
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: elementwisemultRESFloatAligned2.elapsed_time
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: created &elementwisemultRESFloatAligned2
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&elementwisemultRESFloatAligned2] = _901;
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: vectorizing stmts using SLP.
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** The result for vector mode V32QI would be the same
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: splitting region at dominance boundary bb24
+/usr/include/c++/14/bits/new_allocator.h:191:4: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:191:4: missed: splitting region at dominance boundary bb23
+/usr/include/c++/14/bits/basic_string.h:809:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.138171);
+project1Vector.cpp:250:5: missed: not vectorized: statement can throw an exception: resx 49
+/usr/include/c++/14/bits/basic_string.h:809:23: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_string.h:809:23: missed: splitting region at dominance boundary bb171
+/usr/include/c++/14/bits/basic_string.h:809:23: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_string.h:809:23: missed: splitting region at dominance boundary bb53
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/stl_vector.h:1294:21: missed: splitting region at dominance boundary bb65
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/stl_vector.h:1294:21: missed: splitting region at dominance boundary bb172
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/stl_vector.h:1294:21: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/stl_vector.h:1294:21: missed: splitting region at dominance boundary bb175
+/usr/include/c++/14/bits/random.h:1766:14: missed: statement clobbers memory: std::random_device::_M_fini (&rd2);
+project1Vector.cpp:250:5: missed: not vectorized: statement can throw an exception: resx 29
+/usr/include/c++/14/bits/random.h:1766:18: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/random.h:1766:18: missed: splitting region at dominance boundary bb72
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (iftmp.7_599, _259);
+project1Vector.cpp:250:5: missed: not vectorized: statement can throw an exception: resx 28
+/usr/include/c++/14/bits/stl_vector.h:738:7: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:738:7: missed: splitting region at control altering definition _97 = std::basic_ostream<char>::_M_insert<long unsigned int> (&cout, i_37);
+/usr/include/c++/14/ostream:676:18: missed: not vectorized: statement can throw an exception: std::__ostream_insert<char, std::char_traits<char> > (&cout, "Auto-Vectorization Results: ", 28);
+/usr/include/c++/14/ostream:121:13: missed: not vectorized: statement can throw an exception: std::endl.isra (&cout);
+/usr/include/c++/14/ostream:676:18: missed: not vectorized: statement can throw an exception: std::__ostream_insert<char, std::char_traits<char> > (&cout, "at working set size: ", 21);
+/usr/include/c++/14/ostream:179:25: missed: not vectorized: statement can throw an exception: _97 = std::basic_ostream<char>::_M_insert<long unsigned int> (&cout, i_37);
+/usr/include/c++/14/ostream:179:25: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/ostream:179:25: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/ostream:179:25: missed: splitting region at control altering definition _619 = OBJ_TYPE_REF(_613;_602->6B) (_602, 10);
+/usr/include/c++/14/ostream:676:18: missed: not vectorized: statement can throw an exception: std::__ostream_insert<char, std::char_traits<char> > (_97, ", ", 2);
+/usr/include/c++/14/bits/locale_facets.h:884:21: missed: not vectorized: statement can throw an exception: std::ctype<char>::_M_widen_init (_602);
+/usr/include/c++/14/bits/locale_facets.h:885:23: missed: not vectorized: statement can throw an exception: _619 = OBJ_TYPE_REF(_613;_602->6B) (_602, 10);
+/usr/include/c++/14/bits/locale_facets.h:885:23: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/locale_facets.h:885:23: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/locale_facets.h:885:23: missed: splitting region at dominance boundary bb88
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/ostream:745:19: missed: splitting region at dominance boundary bb95
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode V32QI
+/usr/include/c++/14/ostream:745:19: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+/usr/include/c++/14/ostream:745:19: missed: splitting region at control altering definition _600 = std::basic_ostream<char>::put (_97, prephitmp_258);
+/usr/include/c++/14/ostream:745:19: missed: not vectorized: statement can throw an exception: _600 = std::basic_ostream<char>::put (_97, prephitmp_258);
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/ostream:745:19: missed: splitting region at control altering definition _102 = std::basic_ostream<char>::_M_insert<double> (&cout, _101);
+/usr/include/c++/14/ostream:767:24: missed: not vectorized: statement can throw an exception: std::basic_ostream<char>::flush (_600);
+/usr/include/c++/14/ostream:676:18: missed: not vectorized: statement can throw an exception: std::__ostream_insert<char, std::char_traits<char> > (&cout, "AXPY Auto-Vectorization Throughput (GFLOPS): ", 45);
+/usr/include/c++/14/ostream:239:18: missed: not vectorized: statement can throw an exception: _102 = std::basic_ostream<char>::_M_insert<double> (&cout, _101);
+/usr/include/c++/14/ostream:239:18: note: ***** Analysis failed with vector mode V8SF
+/usr/include/c++/14/ostream:239:18: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SF
+/usr/include/c++/14/ostream:239:18: missed: splitting region at control altering definition _647 = OBJ_TYPE_REF(_641;_630->6B) (_630, 10);
+/usr/include/c++/14/bits/locale_facets.h:884:21: missed: not vectorized: statement can throw an exception: std::ctype<char>::_M_widen_init (_630);
+/usr/include/c++/14/bits/locale_facets.h:885:23: missed: not vectorized: statement can throw an exception: _647 = OBJ_TYPE_REF(_641;_630->6B) (_630, 10);
+/usr/include/c++/14/bits/locale_facets.h:885:23: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/locale_facets.h:885:23: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/locale_facets.h:885:23: missed: splitting region at dominance boundary bb107
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/ostream:745:19: missed: splitting region at dominance boundary bb114
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode V32QI
+/usr/include/c++/14/ostream:745:19: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+/usr/include/c++/14/ostream:745:19: missed: splitting region at control altering definition _628 = std::basic_ostream<char>::put (_102, prephitmp_159);
+/usr/include/c++/14/ostream:745:19: missed: not vectorized: statement can throw an exception: _628 = std::basic_ostream<char>::put (_102, prephitmp_159);
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/ostream:745:19: missed: splitting region at control altering definition _106 = std::basic_ostream<char>::_M_insert<double> (&cout, _105);
+/usr/include/c++/14/ostream:767:24: missed: not vectorized: statement can throw an exception: std::basic_ostream<char>::flush (_628);
+/usr/include/c++/14/ostream:676:18: missed: not vectorized: statement can throw an exception: std::__ostream_insert<char, std::char_traits<char> > (&cout, "Dot Product Reduction Auto-Vectorization Throughput (GFLOPS): ", 62);
+/usr/include/c++/14/ostream:239:18: missed: not vectorized: statement can throw an exception: _106 = std::basic_ostream<char>::_M_insert<double> (&cout, _105);
+/usr/include/c++/14/ostream:239:18: note: ***** Analysis failed with vector mode V8SF
+/usr/include/c++/14/ostream:239:18: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SF
+/usr/include/c++/14/ostream:239:18: missed: splitting region at control altering definition _675 = OBJ_TYPE_REF(_669;_658->6B) (_658, 10);
+/usr/include/c++/14/bits/locale_facets.h:884:21: missed: not vectorized: statement can throw an exception: std::ctype<char>::_M_widen_init (_658);
+/usr/include/c++/14/bits/locale_facets.h:885:23: missed: not vectorized: statement can throw an exception: _675 = OBJ_TYPE_REF(_669;_658->6B) (_658, 10);
+/usr/include/c++/14/bits/locale_facets.h:885:23: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/locale_facets.h:885:23: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/locale_facets.h:885:23: missed: splitting region at dominance boundary bb126
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/ostream:745:19: missed: splitting region at dominance boundary bb133
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode V32QI
+/usr/include/c++/14/ostream:745:19: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+/usr/include/c++/14/ostream:745:19: missed: splitting region at control altering definition _656 = std::basic_ostream<char>::put (_106, prephitmp_152);
+/usr/include/c++/14/ostream:745:19: missed: not vectorized: statement can throw an exception: _656 = std::basic_ostream<char>::put (_106, prephitmp_152);
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/ostream:745:19: missed: splitting region at control altering definition _110 = std::basic_ostream<char>::_M_insert<double> (&cout, _109);
+/usr/include/c++/14/ostream:767:24: missed: not vectorized: statement can throw an exception: std::basic_ostream<char>::flush (_656);
+/usr/include/c++/14/ostream:676:18: missed: not vectorized: statement can throw an exception: std::__ostream_insert<char, std::char_traits<char> > (&cout, "Element-Wise Multiply Auto-Vectorization Throughput (GFLOPS): ", 62);
+/usr/include/c++/14/ostream:239:18: missed: not vectorized: statement can throw an exception: _110 = std::basic_ostream<char>::_M_insert<double> (&cout, _109);
+/usr/include/c++/14/ostream:239:18: note: ***** Analysis failed with vector mode V8SF
+/usr/include/c++/14/ostream:239:18: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SF
+/usr/include/c++/14/ostream:239:18: missed: splitting region at control altering definition _703 = OBJ_TYPE_REF(_697;_686->6B) (_686, 10);
+/usr/include/c++/14/bits/locale_facets.h:884:21: missed: not vectorized: statement can throw an exception: std::ctype<char>::_M_widen_init (_686);
+/usr/include/c++/14/bits/locale_facets.h:885:23: missed: not vectorized: statement can throw an exception: _703 = OBJ_TYPE_REF(_697;_686->6B) (_686, 10);
+/usr/include/c++/14/bits/locale_facets.h:885:23: note: ***** Analysis failed with vector mode V4DI
+/usr/include/c++/14/bits/locale_facets.h:885:23: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/c++/14/bits/locale_facets.h:885:23: missed: splitting region at dominance boundary bb145
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/ostream:745:19: missed: splitting region at dominance boundary bb152
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode V32QI
+/usr/include/c++/14/ostream:745:19: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+/usr/include/c++/14/ostream:745:19: missed: splitting region at control altering definition _684 = std::basic_ostream<char>::put (_110, prephitmp_94);
+/usr/include/c++/14/ostream:745:19: missed: not vectorized: statement can throw an exception: _684 = std::basic_ostream<char>::put (_110, prephitmp_94);
+/usr/include/c++/14/ostream:745:19: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/ostream:745:19: missed: splitting region at dominance boundary bb79
+/usr/include/c++/14/ostream:767:24: missed: not vectorized: statement can throw an exception: std::basic_ostream<char>::flush (_684);
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb81
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb83
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb90
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb93
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb96
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb98
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb100
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb102
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb109
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb112
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb115
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb117
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb119
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb121
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb128
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb131
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb134
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb136
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb138
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb140
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb147
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb150
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb153
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb155
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb77
+project1Vector.cpp:391:20: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:391:20: missed: splitting region at dominance boundary bb142
+/usr/include/c++/14/ostream:676:18: missed: not vectorized: statement can throw an exception: std::__ostream_insert<char, std::char_traits<char> > (&cout, "ended Vector program", 20);
+/usr/include/c++/14/ostream:121:13: missed: not vectorized: statement can throw an exception: std::endl.isra (&cout);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (workingSetSizes_847, _130);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (ElementWiseMultiply_Vector$_M_start_738, _127);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (DotProductReduction_Vector$_M_start_472, _123);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (AXPY_Vector$_M_start_5, _119);
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (strideValues$_M_impl$D123505$_M_start_272, _115);
+project1Vector.cpp:250:5: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:250:5: missed: splitting region at dominance boundary bb123
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: not vectorized: statement can throw an exception: std::__throw_bad_cast ();
+/usr/include/c++/14/bits/basic_ios.h:50:18: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: splitting region at dominance boundary bb104
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: not vectorized: statement can throw an exception: std::__throw_bad_cast ();
+/usr/include/c++/14/bits/basic_ios.h:50:18: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: splitting region at dominance boundary bb85
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: not vectorized: statement can throw an exception: std::__throw_bad_cast ();
+/usr/include/c++/14/bits/basic_ios.h:50:18: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: splitting region at dominance boundary bb243
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: not vectorized: statement can throw an exception: std::__throw_bad_cast ();
+/usr/include/c++/14/bits/basic_ios.h:50:18: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: splitting region at dominance boundary bb20
+/usr/include/c++/14/bits/basic_ios.h:50:18: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_ios.h:50:18: missed: splitting region at dominance boundary bb11
+/usr/include/c++/14/bits/basic_string.h:272:29: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/basic_string.h:272:29: missed: splitting region at dominance boundary bb180
+/usr/include/c++/14/bits/stl_vector.h:1920:24: missed: not vectorized: statement can throw an exception: std::__throw_length_error ("cannot create std::vector larger than max_size()");
+/usr/include/c++/14/bits/stl_vector.h:1920:24: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/stl_vector.h:1920:24: missed: splitting region at dominance boundary bb184
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (y2$D122311$_M_impl$D121646$_M_start_213, _138);
+project1Vector.cpp:250:5: missed: not vectorized: statement can throw an exception: resx 21
+/usr/include/c++/14/bits/new_allocator.h:172:26: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: splitting region at dominance boundary bb185
+/usr/include/c++/14/bits/new_allocator.h:172:26: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: splitting region at dominance boundary bb8
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (x2$_M_impl$D121646$_M_start_113, _142);
+project1Vector.cpp:250:5: missed: not vectorized: statement can throw an exception: resx 20
+/usr/include/c++/14/bits/new_allocator.h:172:26: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: splitting region at dominance boundary bb190
+/usr/include/c++/14/bits/new_allocator.h:172:26: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: splitting region at dominance boundary bb193
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (workingSetSizes_847, _146);
+project1Vector.cpp:250:5: missed: not vectorized: statement can throw an exception: resx 17
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (ElementWiseMultiply_Vector$_M_start_340, _150);
+/usr/include/c++/14/bits/new_allocator.h:172:26: note: ***** Analysis failed with vector mode VOID
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: splitting region at dominance boundary bb196
+project1Vector.cpp:329:5: note: ***** Analysis failed with vector mode VOID
+project1Vector.cpp:250:5: missed: not vectorized: statement can throw an exception: resx 12
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (DotProductReduction_Vector$_M_start_61, _154);
+project1Vector.cpp:250:5: missed: not vectorized: statement can throw an exception: resx 10
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (AXPY_Vector$_M_start_62, _158);
+project1Vector.cpp:250:5: missed: not vectorized: statement can throw an exception: resx 8
+/usr/include/c++/14/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (strideValues$_M_impl$D123505$_M_start_272, _162);
+/usr/include/c++/14/bits/stl_vector.h:738:7: note: ***** Analysis failed with vector mode VOID
