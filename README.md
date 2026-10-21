@@ -26,6 +26,8 @@ AI Use Note:
 - --> double checking my benchmarking calculations and formulas
 - --> second opinion on results
 - --> getting compiler flags for scalar vs auto-vectorization vs full targeted SIMD instructions
+- --> bouncing ideas off eachother for possible explanations
+- --> doing last minute polishing of my report explanations (I wrote the original explanations, but they were rough to read)
 - Gemini was used for:
 - --> setting up my Windows 11 C/C++ Compiler environment (it was broken before)
 - --> helping with random number generation code
